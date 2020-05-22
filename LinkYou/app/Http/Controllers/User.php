@@ -12,4 +12,10 @@ class User extends Controller
 
     return view('ShowJob',['jobs'=>$jobs]);
     }
+
+    public function IndexC($id){
+        $jobs=create_post_table::all()->where('id_company',$id);
+    
+        return view('company.indexC',['jobs'=>$jobs]);
+        }
 }
