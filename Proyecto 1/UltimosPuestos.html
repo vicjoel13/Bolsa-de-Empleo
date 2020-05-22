@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ultimos Puestos</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- import CSS -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<link href="UltimosPuestos.css"  rel="stylesheet" type="text/css">
+<!-- import JavaScript -->
+ 
+   
+   
+</head>
+<body>
+ 
+
+ <!-- Div App relacionado con el archivo js -->
+    <div id="app">
+<div id="componente1">
+  <!-- Componente que es donde esta el Nav-->
+  <padre></padre>
+</div> <br>
+ <!-- Buscador-->
+<div id="div1"> <br>
+  
+    <div id="div3">
+        <h2>Ultimos Puestos</h2><br>
+    </div>
+    <div id="div2"> <br>
+    <!-- Input Buscador-->
+   <el-input placeholder="Digite la cantidad" type="number"  id="puesto" name="puesto"  v-model="puesto" v-model="puesto">
+ </el-input> <br>
+  </div>
+         
+<div id="div4">
+    <h6>Usted digito: {{puesto}} Puestos</h6>
+</div>
+
+     <!-- Buttom Guardar-->
+    
+     <div id="div5"><br>
+      <el-button  type="primary"  name="save"   id="save" round  >Guardar Cambios  <i class="el-icon-save"></i></el-button> <br>
+  </div>
+    </div>
+    
+   
+    
+</body>
+ <!-- Dependencias Necesarias-->
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+ <script src="ComponentAdmin.js"></script>
+ <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+         <script src="UltimosPuestos.js"></script>
+</html>
