@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Post A Job</title>
+    <title>Post a job</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -24,27 +24,26 @@
 <div id="componente1">
   <!-- Componente que es donde esta el Nav-->
   <padre></padre>
-</div> <br>
+</div> 
  <!-- Buscador-->
-<div id="div1"> <br>
-  <div id="div2"> <br>
+  <div id="div2"> 
     <!-- Input Buscador-->
    <el-input placeholder="Buscar un trabajo" prefix-icon="el-icon-search" id="search" name="search"  v-model="buscador">
- </el-input> <br>
+ </el-input> 
   </div>
           <!-- Button Buscar -->
- <div id="div3"> <br>
+ <div id="div3"> 
   <el-button type="primary" icon="el-icon-search" circle></el-button>
  </div>
      <!-- Buttom Ver mas-->
     
     
+   
+    <div id="post"> 
+      <el-button type="primary"  name="postear"  id="postear" round >Post a Job<i class="el-icon-edit"></i></el-button>
+    </div>
     
     
-     <div id="div5"><br>
-      <el-button  type="primary"  name="vermas"   id="vermas" 
-        round  >Ver Mas<i class="el-icon-view"></i></el-button> <br>
-  </div>
   
    <!-- Tabla -->
 <div id="div6">
@@ -84,24 +83,19 @@
       label="Código postal"
       width="120">
     </el-table-column>
-  
+   
   </el-table>
 </template>
+</div>
+<div id="div5">
+  <el-button  type="primary"  name="vermas"   id="vermas" 
+    round  >Ver Mas<i class="el-icon-view"></i></el-button> 
+</div>
+
      <!-- Buttom de Post a Job-->
+
 </div>
-  <div id="post"> 
-    <el-button
-    type="primary" 
-    name="postear" 
-    id="postear"
-     round >Post a Job<i class="el-icon-edit"></i></el-button>
-  </div>
   
-
-
-      
-</div>
-    </div>
     
    
     

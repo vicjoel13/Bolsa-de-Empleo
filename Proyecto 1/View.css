@@ -1,48 +1,47 @@
 
 @import url("//unpkg.com/element-ui@2.13.1/lib/theme-chalk/index.css");
 
-#div1{
 
-    position: fixed;
-     left: 600px;
-     bottom: 50px; 
-     width: 300px;
-     text-align: center;
-}
-#div2{
-    position: relative;
-     right: 500px; 
-     bottom:280px;
-      width: 600px; 
-      height: 50px;
+
+@import url("//unpkg.com/element-ui@2.13.1/lib/theme-chalk/index.css");
+#div5{
+    position: absolute;
+    left: 80%;
+    bottom: 8%;
+    margin: 3%;
+    right: 40%;
+    width: 10%;
+   
   }
-  #div3{
-    position: relative;
-     right:75px; 
-     bottom: 330px;
-      width: 400px;
-       height: 150px;
-  }
-
-#div4{
-    position: fixed; 
-    left: 100px; 
-    bottom: 300px;
-     width: 80%;
-      height: 150px;
-      margin: 10px;
-
-}
-#componente{
- 
-    font-style:italic;
-  text-align: center;
+  #div6{
+    height: 40%;
+   bottom: 15%;
+   width: 90%;
+    position: absolute;
+    margin: 3%;
+    height: 50%;
   
   }
-
-h3 {
-    color:#A0E1F1;
-    font-size:30px;
-    font-style:italic;
-    text-align: center;
+  #div2{
+  
+    margin: 3%;
+    height: 10%;
+    width: 40%;
+    top: 0;
   }
+  #div3{
+    position: absolute;
+    left: 42%;
+    margin: 3%;
+    top: 10%;
+  
+  
+  }#post{
+    position: absolute;
+    left: 80%;
+    bottom: 75%;
+    margin: 1%;
+    right: 40%;
+    width: 10%;
+  }
+  

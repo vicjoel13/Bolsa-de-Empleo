@@ -1,32 +1,20 @@
 #div3{
-    font-size:30px;
-    font-style:italic;
-   
-    width: 450px;
-    right: 300px;
+    margin: 4%;
 }
-#div1{
-text-align: center;
-    width: 30%;
+#div2{
+    position: absolute;
+    margin: 4%;
+    width: 40%;
+    bottom: 55%;
+}#div4{
+    position: absolute;
+    margin: 2%;
+    left: 5%;
+    bottom: 50%;
 }
-#div4{
-    width: 850px;
-    right: 300px;
-    font-size:40px;
-    font-style:italic;
-    text-align: center;
-}#div2{
-    position: fixed; 
-    left: 100px; 
-    bottom: 330px;
-     width: 30%;
-      height: 150px;
-      margin: 10px;
-
-}#div5{
-    width: 850px;
-    right: 300px;
-}body{
-
-    text-align: center;
+#div5{
+    position: absolute;
+    margin: 4%;
+    bottom: 45%;
+    left: 35%;
 }

@@ -24,27 +24,26 @@
 <div id="componente1">
   <!-- Componente que es donde esta el Nav-->
   <padre></padre>
-</div> <br>
+</div> 
  <!-- Buscador-->
-<div id="div1"> <br>
-  <div id="div2"> <br>
+  <div id="div2"> 
     <!-- Input Buscador-->
    <el-input placeholder="Buscar un trabajo" prefix-icon="el-icon-search" id="search" name="search"  v-model="buscador">
- </el-input> <br>
+ </el-input> 
   </div>
           <!-- Button Buscar -->
- <div id="div3"> <br>
+ <div id="div3"> 
   <el-button type="primary" icon="el-icon-search" circle></el-button>
  </div>
      <!-- Buttom Ver mas-->
     
     
+   
+    <div id="post"> 
+      <el-button type="primary"  name="postear"  id="postear" round >Post a Job<i class="el-icon-edit"></i></el-button>
+    </div>
     
     
-     <div id="div5"><br>
-      <el-button  type="primary"  name="vermas"   id="vermas" 
-        round  >Ver Mas<i class="el-icon-view"></i></el-button> <br>
-  </div>
   
    <!-- Tabla -->
 <div id="div6">
@@ -105,21 +104,16 @@
     </el-table-column>
   </el-table>
 </template>
+</div>
+<div id="div5">
+  <el-button  type="primary"  name="vermas"   id="vermas" 
+    round  >Ver Mas<i class="el-icon-view"></i></el-button> 
+</div>
+
      <!-- Buttom de Post a Job-->
+
 </div>
-  <div id="post"> 
-    <el-button
-    type="primary" 
-    name="postear" 
-    id="postear"
-     round >Post a Job<i class="el-icon-edit"></i></el-button>
-  </div>
   
-
-
-      
-</div>
-    </div>
     
    
     
