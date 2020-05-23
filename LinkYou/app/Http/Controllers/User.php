@@ -10,7 +10,7 @@ class User extends Controller
     public function showJobs(){
     $jobs=create_post_table::all()->where('isActive',1);
 
-    return view('ShowJob',['jobs'=>$jobs]);
+    return view('user.ShowJob',['jobs'=>$jobs]);
     }
 
     public function IndexC($id){
@@ -18,4 +18,10 @@ class User extends Controller
     
         return view('company.indexC',['jobs'=>$jobs]);
         }
+
+        public function PostJob(){
+    
+        
+            return view('user.PostJob');
+            }
 }

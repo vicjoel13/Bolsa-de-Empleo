@@ -18,6 +18,21 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <!-- import CSS -->
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+<link href="{{ asset('css/Admin.css') }}"  rel="stylesheet" type="text/css">
+<!-- import JavaScript -->
+
+   <!-- import local CSS -->
+   <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+   <!-- import element CSS -->
+   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+   <!-- import Font -->
+   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+   <!-- import ImgUr CSS  -->
+   <link href="{{ asset('Img Upload/css/style.css') }}" rel="stylesheet" media="screen">
+   <link href="{{ asset('Img Upload/css/mobile-style.css')}}" rel="stylesheet" media="screen">
+   
 </head>
 <body>
     <div id="app">
@@ -77,4 +92,14 @@
         </main>
     </div>
 </body>
+  <!-- Dependencias Necesarias-->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="{{ asset('js/PostJob.js') }}"></script>
+  <!-- inport local JavaScript -->
+<script src="{{ asset('js/01.js') }}"></script>
+<!-- import ImgUr JavaScript -->
+<script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
+<script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
 </html>

@@ -21,4 +21,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ShowJobs', 'user@showJobs');
+Route::get('/Company/post','user@PostJob');
 Route::get('/Company/{id}','user@IndexC');
