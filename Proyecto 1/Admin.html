@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Post a job</title>
+    <title>Admin Job</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -26,27 +26,27 @@
   <padre></padre>
 </div> 
  <!-- Buscador-->
-  <div id="div7"> 
+  <div id="div2"> 
     <!-- Input Buscador-->
    <el-input placeholder="Buscar un trabajo" prefix-icon="el-icon-search" id="search" name="search"  v-model="buscador">
  </el-input> 
   </div>
           <!-- Button Buscar -->
- <div id="div8"> 
+ <div id="div3"> 
   <el-button type="primary" icon="el-icon-search" circle></el-button>
  </div>
      <!-- Buttom Ver mas-->
     
     
    
-    <div id="post1"> 
+    <div id="post"> 
       <el-button type="primary"  name="postear"  id="postear" round >Post a Job<i class="el-icon-edit"></i></el-button>
     </div>
     
     
   
    <!-- Tabla -->
-<div id="div9">
+<div id="div6">
     <template>
   <el-table
     :data="tableData"
@@ -83,11 +83,29 @@
       label="Código postal"
       width="120">
     </el-table-column>
-   
+    <el-table-column
+      fixed="right"
+      label="Operaciones"
+      width="120">
+      <template slot-scope="scope">
+        <el-button
+
+          type="text"
+          size="small">
+        Editar
+        </el-button>
+        <el-button
+        @click.native.prevent="deleteRow(scope.$index, tableData)"
+        type="text"
+        size="small">
+        Eliminar
+      </el-button>
+      </template>
+    </el-table-column>
   </el-table>
 </template>
 </div>
-<div id="div10">
+<div id="div5">
   <el-button  type="primary"  name="vermas"   id="vermas" 
     round  >Ver Mas<i class="el-icon-view"></i></el-button> 
 </div>
@@ -102,7 +120,7 @@
 </body>
  <!-- Dependencias Necesarias-->
  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
- <script src="Component.js"></script>
+ <script src="ComponentAdmin.js"></script>
  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
-         <script src="PostJob.js"></script>
+         <script src="Admin.js"></script>
 </html>
