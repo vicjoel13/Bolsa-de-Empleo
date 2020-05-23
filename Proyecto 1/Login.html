@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link href="Login.css"  rel="stylesheet" type="text/css">
+  
+</head>
+<body>
+    <form 
+    id="app"
+    @submit="valor"
+    action="https://vuejs.org/"
+    method="post"
+    
+    >
+        <!-- Div Para El cuadro-->
+     <div id="cuadrado">
+        <!--Div Relacionado con el archivo .jS Vuejs-->
+        <div id="app1">
+           <div id="contenedor">
+                <!-- Cabecera -->
+              <div id="cabecera">
+                <h2>Login</h2>
+              </div>
+                <!-- Donde Va el contenido de los inputs -->
+              <div id="contenido">
+                <ul>
+  
+                      <h1>User Login</h1>
+                        <br>
+                        <div id="hr">
+                          <hr>
+                        </div>
+                        
+                        <br>
+                         <!-- Inputs-->
+                   <div id="input"> 
+                    <el-input type="text" suffix-icon="el-icon-s-custom"  style="width: 40%;" class="input" placeholder="UserName" v-model="user" id="user" name="user" required></el-input> <br>
+                    <div id="input"> <br>
+
+                      <el-input type="password" suffix-icon="el-icon-lock "  style="width: 40%;" class="input" placeholder="Password" v-model="pass" id="pass" name="pass"></el-input> <br>
+                    </div>
+                     <!-- Boton Inicial -->
+                   <div id="iniciar"> <br>
+                    <el-button v-on:click="submit"type="primary" round id="iniciar" name="iniciar" @click="valor" >Iniciar</el-button>
+                   </div>
+                  
+                </div>
+                </ul>
+            
+                      <!-- Cuadro azul de la pag -->
+              <div id="azul">
+               
+               <h3>LinkYou</h3><br>
+              
+              
+            </div>
+            <h4 style="left: 520px;
+            bottom: 450px;">No tienes Cuenta?</h4>
+                <a href="" id="registrarme">Registrarme</a>
+        </div>
+        </div>
+              </div>
+</form>
+</body>
+        <!-- Archivos o dependencias necesarias -->
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <script src="Login.js"></script>
+</html>

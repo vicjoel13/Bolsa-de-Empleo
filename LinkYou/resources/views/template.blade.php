@@ -14,6 +14,7 @@
     <!-- import ImgUr CSS  -->
     <link href="Img Upload/css/style.css" rel="stylesheet" media="screen">
     <link href="Img Upload/css/mobile-style.css" rel="stylesheet" media="screen">
+        <link href="View.css"  rel="stylesheet" type="text/css">
     <title>Postear</title>
 
     
@@ -30,4 +31,8 @@
 <!-- import ImgUr JavaScript -->
 <script type="text/javascript" src="Img Upload/js/imgur.js"></script>
 <script type="text/javascript" src="Img Upload/js/upload.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="Component.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script type="text/javascript" src="{{ URL::asset('js/ViewJob.js') }}">
 </html>
