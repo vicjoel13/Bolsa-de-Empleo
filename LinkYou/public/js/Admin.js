@@ -1,6 +1,6 @@
 const app = new Vue({
 
-    el: '#app',
+    el: '#app-Admin',
     
         methods: {
           deleteRow(index, rows) {

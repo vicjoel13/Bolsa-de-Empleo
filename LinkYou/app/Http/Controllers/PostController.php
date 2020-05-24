@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function create()
+    public function PostJob()
     {
         return view('user.PostJob');
     }
