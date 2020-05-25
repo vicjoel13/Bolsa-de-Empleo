@@ -2,7 +2,7 @@
 
 @section('content')
  <!-- Div App relacionado con el archivo js -->
- <div id="app_ShowJobs">
+ <div id="app_MoreJobs">
     <div id="componente1">
       <!-- Componente que es donde esta el Nav-->
 

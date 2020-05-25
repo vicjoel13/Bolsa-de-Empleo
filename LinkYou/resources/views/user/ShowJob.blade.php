@@ -29,8 +29,7 @@
      </div>
      
      
-   ['', '', '', '', '',
-    '', '', '', '', 'application', 'id_company']
+   
     <!-- Tabla -->
  <div id="div9">
      <template>
@@ -38,57 +37,23 @@
      :data="tableData"
      style="width: 100%"
      max-height="250">
-     <el-table-column
-       fixed
-       prop="time_type"
-       label="Fecha"
-       width="150">
-     </el-table-column>
-     <el-table-column
-       prop="company"
-       label="Nombre"
-       width="120">
-     </el-table-column>
-     <el-table-column
-       prop="logo"
-       label="Estado"
-       width="120">
-     </el-table-column>
-     <el-table-column
-       prop="URL"
-       label="Ciudad"
+      <el-table-column
+       prop="location"
+       label="Ubicacion"
        width="120">
      </el-table-column>
      <el-table-column
        prop="position"
-       label="Dirección"
-       width="300">
-     </el-table-column>
-     <el-table-column
-       prop="location"
-       label="Código postal"
+       label="Posicion"
        width="120">
      </el-table-column>
      <el-table-column
-       prop="job_category"
-       label="job_category"
-       width="120">
+       fixed
+       prop="company"
+       label="Compañia"
+       width="150">
      </el-table-column>
-     <el-table-column
-       prop="description"
-       label="description"
-       width="120">
-     </el-table-column>
-     <el-table-column
-       prop="location"
-       label="Código postal"
-       width="120">
-     </el-table-column>
-     <el-table-column
-       prop="location"
-       label="Código postal"
-       width="120">
-     </el-table-column>
+    
     
    </el-table>
  </template>
