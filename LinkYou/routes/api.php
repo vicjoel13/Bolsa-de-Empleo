@@ -17,5 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-
+//show all jobs
 Route::get('Jobs', "PostController@index");
+//list one Job
+Route::get('Job/{id}','PostController@show');
+//Create post Or Update/Edit
+Route::post('Job','PostController@store');
+//Delete Article
+Route::delete('Job/{id}','PostController@destroy');

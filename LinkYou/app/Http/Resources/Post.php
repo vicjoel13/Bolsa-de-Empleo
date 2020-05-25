@@ -16,6 +16,7 @@ class Post extends JsonResource
     {
         
          return[
+            'id'=>$this->id,
             'company'=>$this->company,
             'position'=>$this->position,
             'location'=>$this->location
