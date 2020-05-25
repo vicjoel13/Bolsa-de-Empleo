@@ -3,16 +3,26 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\create_post_table;
 class PostController extends Controller
 {
+
+    public function showAll()
+    {
+        $post = create_post_table::all()->toJson();
+        return $post;
+    }
+
+
+
+
     public function create()
     {
         return view('user.PostJob');
     }
     public function store()
     {
-        $post = new create_post_tables();
+        $post = new create_post_table();
         $post->company = request('company');
         $post->time_type = request('time_type');
         $post->logo = request('logo');

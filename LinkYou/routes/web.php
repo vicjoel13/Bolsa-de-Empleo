@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ShowJobs', 'user@showJobs');
 Route::get('/Company/post','user@PostJob');
+Route::get('/showAllJobs', 'PostController@showAll');
 Route::get('/Company/{id}','user@IndexC');
