@@ -27,7 +27,9 @@ const app = new Vue({
     mounted() {
         this.axios
             .get('http://127.0.0.1:8000/api/Jobs')
-            .then(response => (this.tableData = JSON.parse(response)))
+            .then(response => (this.info = JSON.parse(response)));
+
+
     }
 
 })

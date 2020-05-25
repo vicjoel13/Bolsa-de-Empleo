@@ -28,7 +28,6 @@
        <el-button type="primary"  name="postear"  id="postear" round >Post a Job<i class="el-icon-edit"></i></el-button>
      </div>
      
-     
    
     <!-- Tabla -->
  <div id="div9">
@@ -36,23 +35,25 @@
    <el-table
      :data="tableData"
      style="width: 100%"
-     max-height="250">
-      <el-table-column
+     max-height="400">
+     <el-table-column
+       fixed
        prop="location"
        label="Ubicacion"
-       width="120">
+       width="400">
      </el-table-column>
      <el-table-column
        prop="position"
        label="Posicion"
-       width="120">
+       width="400">
      </el-table-column>
      <el-table-column
-       fixed
        prop="company"
        label="Compañia"
-       width="150">
+       width="400">
      </el-table-column>
+    
+    
     
     
    </el-table>
