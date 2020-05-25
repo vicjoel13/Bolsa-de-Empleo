@@ -24,7 +24,7 @@
 <!-- import JavaScript -->
 
    <!-- import local CSS -->
-   <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+   <link rel="stylesheet" href="{{ asset('css/style.css')}}">>
    <!-- import element CSS -->
    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
    <!-- import Font -->
@@ -39,7 +39,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                 LinkYou
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -99,6 +99,8 @@
   <script src="{{ asset('js/PostJob.js') }}"></script>
   <!-- inport local JavaScript -->
 <script src="{{ asset('js/01.js') }}"></script>
+<script src="{{ asset('js/Admin.js') }}"></script>
+<script src="{{ asset('js/ViewJob.js') }}"></script>
 <!-- import ImgUr JavaScript -->
 <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
 <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>

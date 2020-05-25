@@ -1,25 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\create_post_table;
+use App\Http\Resources\Post as Post;
 class PostController extends Controller
 {
-
     public function showAll()
     {
         $post = create_post_table::all()->toJson();
         return $post;
     }
-
-
-
-
-    public function create()
+    
+    public function PostJob()
     {
         return view('user.PostJob');
     }
+
     public function store()
     {
         $post = new create_post_table();
@@ -36,6 +34,12 @@ class PostController extends Controller
         $post->id_company = request('id_company');
         $post->save();
         return view('company.indexC');
-
     }
+    public function index()
+    {
+        //get articles
+        $jobs=create_post_table::paginate(10);
+        return Post::collection($jobs);
+    }
+
 }
