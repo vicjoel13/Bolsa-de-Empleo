@@ -30,7 +30,7 @@
             <th scope="col">Compañia</th>
             <th scope="col">Posicion</th>
             <th scope="col">Ubicacion</th>
-            <th scope="col">Accion</th>
+           
           </tr>
         </thead>
         <tbody id="tbody">
