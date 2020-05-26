@@ -6,6 +6,7 @@
     <hr>
     <div class="principal">
         <div id="app2">
+            <form action="" method="post">
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
 
                 <!-- inputs Informacion -->
@@ -59,7 +60,7 @@
                     <el-button type="primary" v-on:click="submitForm('ruleForm')">Crear</el-button>
                     <el-button v-on:click="resetForm('ruleForm')">Limpiar</el-button>
                 </el-form-item>
-                
+            </form>
             </el-form>
         </div>
     </div>

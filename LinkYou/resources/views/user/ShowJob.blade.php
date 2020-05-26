@@ -24,9 +24,7 @@
      
      
     
-     <div id="post1"> 
-       <el-button type="primary"  name="postear"  id="postear" round >Post a Job<i class="el-icon-edit"></i></el-button>
-     </div>
+     
      
    
     <!-- Tabla -->
@@ -57,8 +55,8 @@
      round  >Ver Mas<i class="el-icon-view"></i></el-button> 
  </div>
  
-      <!-- Buttom de Post a Job-->
- 
+    <!-- Buttom de Post a Job-->
+
  </div>
    
      

@@ -20,7 +20,7 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        $post=$request->isMethod('put') ? create_post_table::findOrFail($request->create_post_tables_id):new Post;
+        $post=$request->isMethod('put') ? create_post_table::findOrFail($request->create_post_tables_id):new create_post_table;
        
         $post->id =$request->input('create_post_tables_id');
         $post->company =$request->input('company');
