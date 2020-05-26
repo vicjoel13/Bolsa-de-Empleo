@@ -20,8 +20,9 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-        $post=$request->isMethod('put')?create_post_table::findOrFail($request->id):new create_post_table;
-
+        $post=$request->isMethod('put') ? create_post_table::findOrFail($request->create_post_tables_id):new Post;
+       
+        $post->id =$request->input('create_post_tables_id');
         $post->company =$request->input('company');
         $post->time_type = $request->input('time_type');
         $post->logo = $request->input('logo');
@@ -36,7 +37,6 @@ class PostController extends Controller
         if($post->save()){
             return new Post($post); 
          }
-        $post->save();
 
         return view('company.indexC');
     }
