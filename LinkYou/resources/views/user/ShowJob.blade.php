@@ -5,7 +5,7 @@
  
 
   <!-- Div App relacionado con el archivo js -->
-     <div id="app_ShowJobs">
+     <div id="app_ShowJobs" >
  <div id="componente1">
    <!-- Componente que es donde esta el Nav-->
    
@@ -31,33 +31,27 @@
    
     <!-- Tabla -->
  <div id="div9">
-     <template>
-   <el-table
-     :data="tableData"
-     style="width: 100%"
-     max-height="400">
-     <el-table-column
-       fixed
-       prop="location"
-       label="Ubicacion"
-       width="400">
-     </el-table-column>
-     <el-table-column
-       prop="position"
-       label="Posicion"
-       width="400">
-     </el-table-column>
-     <el-table-column
-       prop="company"
-       label="Compañia"
-       width="400">
-     </el-table-column>
+
+
+<table class="table table-striped">
+  <thead class="thead-primary">
+    <tr >
+      <th scope="col">#</th>
+      <th scope="col">Compa</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody id="tbody">
+  <tr id="tr"></tr>
     
-    
-    
-    
-   </el-table>
- </template>
+  </tbody>
+</table>
+
+
+
+
+
  </div>
  <div id="div10">
    <el-button  type="primary"  name="vermas"   id="vermas" 
