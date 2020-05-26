@@ -10,10 +10,10 @@
         <el-col :span="10" style="margin-left: 3%">
           <el-input placeholder="Buscar un trabajo" prefix-icon="el-icon-search" id="search" name="search"  v-model="buscador"></el-input> 
         </el-col>
-        <el-col :span="5" style="margin-left: 2%">
+        <el-col :span="6" style="margin-left: 2%">
           <el-button type="primary" icon="el-icon-search"></el-button>
         </el-col>
-        <el-col :span="5" style="margin-left: 2%; position: fixed; right: 20px">
+        <el-col :span="3" style="margin-left: 2%; position: fixed; right: 10px">
           <el-button type="primary" icon="el-icon-edit">Crear empleo</el-button>        
        </el-col>
       </el-form-item>
