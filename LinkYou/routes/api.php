@@ -21,7 +21,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('Jobs', "PostController@index");
 //list one Job
 Route::get('Job/{id}','PostController@show');
-//Create post Or Update/Edit
+//Create post 
 Route::post('Job','PostController@store');
+//Update/Edit
+Route::put('Job','PostController@store');
 //Delete Article
 Route::delete('Job/{id}','PostController@destroy');

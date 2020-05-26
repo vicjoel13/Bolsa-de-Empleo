@@ -24,7 +24,7 @@
 <!-- import JavaScript -->
 
    <!-- import local CSS -->
-   <link rel="stylesheet" href="{{ asset('css/style.css')}}">>
+   <link rel="stylesheet" href="{{ asset('css/style.css')}}">
    <!-- import element CSS -->
    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
    <!-- import Font -->
