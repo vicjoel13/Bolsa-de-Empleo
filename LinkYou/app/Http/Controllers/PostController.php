@@ -43,7 +43,7 @@ class PostController extends Controller
     public function index()
     {
         //get jobs
-        $jobs=create_post_table::paginate(10);
+        $jobs=create_post_table::orderBy('created_at', 'ASC')->paginate(10);
         return Post::collection($jobs);
     }
     public function show($id)
