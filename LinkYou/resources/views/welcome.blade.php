@@ -54,8 +54,8 @@
 
             .texto-encima{
                 position: absolute;
-                top: 10px;
-                 left: 10px;
+                top: 240px;
+                right: 10px;
 }
             .carousel-caption{
                 position: absolute;
@@ -145,21 +145,21 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img class="d-block w-100"  width="200" height="657"   src="https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Los Angeles" >
+                    <img class="d-block w-100"  width="200" height="657"   src="https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Presentacion" >
                     <div class="carousel-caption d-none d-md-block">
                   <big><h1><br><br><br><strong> &nbsp; LinkYou!</strong></h1></big>
                   <p> <h4>Jobs Positions Right Here</h4></p>
                   </div>
                    </div>
                   <div class="carousel-item">
-                    <img class="d-block w-10000 "  width="1366" height="657"  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Chicago">
+                    <img class="d-block w-10000 "  width="1366" height="657"  src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Cierre de trato laboral">
                     <div class="carousel-caption d-none d-md-block">
                      &nbsp; <h1  style="color: black;"> <strong> &nbsp;Un mundo de Oportunidades</strong></h1>
                   <p> <h4  style="color: black;">El espacio mas amplio de alternativas y nuevas experiencias , empresas buscando talentos justo como tu para elevar sus negocios.</h4></p>
                 </div>
                 </div>
                   <div class="carousel-item">
-                    <img   class="d-block w-1000"   width="1366"  height="657"  src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="New York">
+                    <img   class="d-block w-1000"   width="1366"  height="657"  src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Comentarios">
                     <div class="carousel-caption d-none d-md-block " >
                     <h1  style="color: black;" >  <strong> &nbsp;Variedad</strong></h1>
                         <h4>Numerosas vacantes disponibles en diferentes areas, es tiempo de desarrollar tus habilidades y alcanzar tus metas.</h4>
@@ -171,9 +171,9 @@
                     </div>
                 </div>
                   <div class="carousel-item">
-                    <img class="d-block w-10000 "  width="1366" height="657"  src="https://images.unsplash.com/photo-1575043627654-ef061bd7700f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Chicago">
-                    <div class="carousel-caption d-none d-md-block">
-                     &nbsp; <h1  style="color: black;"> <strong> &nbsp;Un banco de candidatos</strong></h1>
+                    <img class="d-block w-10000 " align="left" width="1366" height="657"  src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Candidatos">
+                    <div class="texto-encima" align="left">
+                     &nbsp; <h1  style="color: black;"> <strong> &nbsp; &nbsp; &nbsp;Un banco de candidatos</strong></h1>
                   <p> <h4  style="color: black;"><em>Navega entre los miles perfiles que llegan a dairio.</em></h4></p>
                 
                 </div> 
