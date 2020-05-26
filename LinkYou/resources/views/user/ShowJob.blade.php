@@ -20,7 +20,7 @@
     </el-form>
 
     <div id="divTable">
-      <table class="table table-striped" style="margin-top: 10px">
+      <table class="table table-hover" style="margin-top: 10px">
         <thead class="thead-primary">
           <tr >
             <th scope="col">Compañia</th>
