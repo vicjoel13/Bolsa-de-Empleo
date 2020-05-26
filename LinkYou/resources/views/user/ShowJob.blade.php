@@ -21,7 +21,7 @@
 
     <div id="divTable">
       <table class="table table-hover" style="margin-top: 10px">
-        <thead class="thead-primary">
+        <thead class="thead-primary" style="background-color: #409EFF;color: white">
           <tr >
             <th scope="col">Compañia</th>
             <th scope="col">Posicion</th>
