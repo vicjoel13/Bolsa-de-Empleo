@@ -741,18 +741,6 @@
         },
         {
             "name": "laravel/framework",
-<<<<<<< HEAD
-            "version": "v7.13.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "6fa69bfbd57744a5bbec5538ce483919b3fd625f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6fa69bfbd57744a5bbec5538ce483919b3fd625f",
-                "reference": "6fa69bfbd57744a5bbec5538ce483919b3fd625f",
-=======
             "version": "v7.12.0",
             "source": {
                 "type": "git",
@@ -763,7 +751,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/c2fff1e9879494a6f853593b3c517dc9922bbb51",
                 "reference": "c2fff1e9879494a6f853593b3c517dc9922bbb51",
->>>>>>> 36b0a613823432ae7d1455cf0b9472a023c01893
                 "shasum": ""
             },
             "require": {
@@ -903,11 +890,7 @@
                 "framework",
                 "laravel"
             ],
-<<<<<<< HEAD
-            "time": "2020-05-26T14:32:43+00:00"
-=======
             "time": "2020-05-19T17:09:00+00:00"
->>>>>>> 36b0a613823432ae7d1455cf0b9472a023c01893
         },
         {
             "name": "laravel/tinker",
@@ -1130,18 +1113,6 @@
         },
         {
             "name": "league/flysystem",
-<<<<<<< HEAD
-            "version": "1.0.46",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
-                "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
-=======
             "version": "1.0.69",
             "source": {
                 "type": "git",
@@ -1152,7 +1123,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
                 "reference": "7106f78428a344bc4f643c233a94e48795f10967",
->>>>>>> 36b0a613823432ae7d1455cf0b9472a023c01893
                 "shasum": ""
             },
             "require": {
@@ -1223,9 +1193,6 @@
                 "sftp",
                 "storage"
             ],
-<<<<<<< HEAD
-            "time": "2018-08-22T07:45:22+00:00"
-=======
             "funding": [
                 {
                     "url": "https://offset.earth/frankdejonge",
@@ -1233,7 +1200,6 @@
                 }
             ],
             "time": "2020-05-18T15:13:39+00:00"
->>>>>>> 36b0a613823432ae7d1455cf0b9472a023c01893
         },
         {
             "name": "monolog/monolog",
@@ -3834,18 +3800,6 @@
         },
         {
             "name": "voku/portable-ascii",
-<<<<<<< HEAD
-            "version": "1.5.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "e7f9bd5deff09a57318f9b900ab33a05acfcf4d3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/e7f9bd5deff09a57318f9b900ab33a05acfcf4d3",
-                "reference": "e7f9bd5deff09a57318f9b900ab33a05acfcf4d3",
-=======
             "version": "1.5.0",
             "source": {
                 "type": "git",
@@ -3856,7 +3810,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/voku/portable-ascii/zipball/2d302cf7dc474d5f7f18b29b03e0e77d408922a4",
                 "reference": "2d302cf7dc474d5f7f18b29b03e0e77d408922a4",
->>>>>>> 36b0a613823432ae7d1455cf0b9472a023c01893
                 "shasum": ""
             },
             "require": {
@@ -3909,11 +3862,7 @@
                     "type": "tidelift"
                 }
             ],
-<<<<<<< HEAD
-            "time": "2020-05-26T06:40:44+00:00"
-=======
             "time": "2020-05-23T23:15:19+00:00"
->>>>>>> 36b0a613823432ae7d1455cf0b9472a023c01893
         }
     ],
     "packages-dev": [
