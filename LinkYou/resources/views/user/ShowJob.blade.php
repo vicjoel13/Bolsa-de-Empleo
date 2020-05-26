@@ -36,10 +36,9 @@
 <table class="table table-striped">
   <thead class="thead-primary">
     <tr >
-      <th scope="col">#</th>
-      <th scope="col">Compa</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Compañia</th>
+      <th scope="col">Posicion</th>
+      <th scope="col">Ubicacion</th>
     </tr>
   </thead>
   <tbody id="tbody">

@@ -13,9 +13,8 @@ var app = new Vue({
 
                 for (i = 0; i < response.data.data.length; i++) {
                     console.log(this.users[i].company);
-                    tableContent.innerHTML =
-                        "<tr><td>" + this.users[i].company + "</td></tr>";
-                    table.appendChild(tableContent);
+                    table.insertRow().innerHTML =
+                        "<td>" + this.users[i].company + "</td>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>";
                 }
 
 
