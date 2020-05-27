@@ -6,17 +6,10 @@
         <div id="appJob">
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
                 <div class="grid-container">
-
-<<<<<<< HEAD
-                    <input v-model="hola" id="turu" value="jajaj">
-                    <p>@{{hola}}</p>
-
-=======
-                
+  
                 <input v-model="hola" id="turu" value="{{$id}}">
                     <p>@{{hola}}</p>
                     
->>>>>>> 6a0e0a0bd92134d581d0f4558cf05c5bdf3d2d26
                     <!-- div Company name -->
                     <div class="item1">@{{job.company}}</div>
 

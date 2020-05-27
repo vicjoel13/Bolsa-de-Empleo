@@ -104,6 +104,7 @@
   <script src="{{ asset('js/PostJob.js') }}"></script>
   <!-- inport local JavaScript -->
 <script src="{{ asset('js/01.js') }}"></script>
+<script src="{{ asset('js/02.js') }}"></script>
 <script src="{{ asset('js/Admin.js') }}"></script>
 <!-- import ImgUr JavaScript -->
 <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
