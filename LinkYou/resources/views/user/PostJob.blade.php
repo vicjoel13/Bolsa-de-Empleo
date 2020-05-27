@@ -5,14 +5,13 @@
     <h1>Publicar empleo</h1>
     <hr>
     <div class="principal">
-        <div id="app2">
+        <div id="app_post">
             <form action="" method="post">
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
                 <!-- inputs Informacion -->
                 <el-form-item label="Categoria:" required>
                     <el-col :span="11">
-                        <el-select v-model="ruleForm.country" placeholder="Seleccionar categoria" style="width: 100%;">
-                            <el-option label="Zone one" value="shanghai"></el-option>
+                        <el-select v-model="ruleForm.country" placeholder="Seleccionar categoria" style="width: 100%;">                            
                             <el-option label="Zone two" value="beijing"></el-option>
                         </el-select>
                     </el-col>

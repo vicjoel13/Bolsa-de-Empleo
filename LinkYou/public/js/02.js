@@ -1,15 +1,16 @@
-var turu = document.getElementById('turu').value;
-
 var vm5 = new Vue({
   el: "#appJob",
   data() {
     return {
-      hola: turu,
+      hola: '',
       job:{},
       iman: ''
     } 
   },
-  mounted: function() {
+  beforeMount(){
+    this.hola = $("input[name=turu]").val();
+  },
+  mounted() {
     axios.get('http://127.0.0.1:8000/api/Job/'+this.hola)
         .then(response => {
             this.job = response.data.data;

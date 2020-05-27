@@ -10,9 +10,7 @@ var Main = {
           phone: '',
           country: '',
           type: '',
-        },
-      
-        
+        },    
       };
     },
     methods: {
@@ -38,4 +36,4 @@ var Main = {
 
   }
 var Ctor = Vue.extend(Main)
-new Ctor().$mount('#app2')
+new Ctor().$mount('#app_post')
