@@ -14,7 +14,7 @@ var app = new Vue({
                 for (i = 0; i < response.data.data.length; i++) {
                     console.log(this.users[i].company);
                     table.insertRow().innerHTML =
-                        "<td>" + this.users[i].company + "</td>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>";
+                        "<td>" + this.users[i].company + "</td>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>","<td>" +redirect('Details/'+this.users[i].id)+ "</td>";
                 }
 
 
