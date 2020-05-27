@@ -1,5 +1,5 @@
 
-//var turu = document.getElementById('turu').value;
+var turu = document.getElementById('turu').value;
 
 var vm5 = new Vue({
   el: "#appJob",
