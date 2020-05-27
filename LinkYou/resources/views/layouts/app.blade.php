@@ -108,4 +108,5 @@
 <!-- import ImgUr JavaScript -->
 <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
 <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
+
 </html>
