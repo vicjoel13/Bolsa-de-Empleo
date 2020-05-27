@@ -33,7 +33,7 @@
             <th scope="col">Compañia</th>
             <th scope="col">Posicion</th>
             <th scope="col">Ubicacion</th>
-            <th scope="col">Acciones</th>
+            <th scope="col">Operaciones</th>
            
           </tr>
         </thead>

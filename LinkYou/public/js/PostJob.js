@@ -2,8 +2,11 @@ var app = new Vue({
     el: "#app_ShowJobs",
     data: {
         users: [],
-        buscador: [""]
+        buscador: [""],
+      
     },
+    
+
     mounted: function() {
         axios.get('http://127.0.0.1:8000/api/Jobs')
             .then(response => {
@@ -15,12 +18,13 @@ var app = new Vue({
                     console.log(this.users[i].company);
                     table.insertRow().innerHTML =
                     
-                        "<th scope='row'>" + this.users[i].company + "</th>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>"
-                        ;
+                        "<th scope='row'>" + this.users[i].company + "</th>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>"+"<button class='el-button el-button btn-sm' type='primary' >Mostrar</button>";
                 }
             })
             .catch(error => {
                 console.log(error);
             });
+
+            
     }
 });
