@@ -13,11 +13,10 @@
         <el-col :span="6" style="margin-left: 2%">
           <el-button type="primary" icon="el-icon-search"></el-button>
         </el-col>
-<<<<<<< HEAD
+
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
-=======
         <el-col :span="3" style="margin-left: 2%; right: 10px;">
->>>>>>> 0aa99374b106ffbb7028d98cc75a98b3ab1dfa29
+
           <el-button type="primary" icon="el-icon-edit">Crear empleo</el-button>        
        </el-col>
       </el-form-item>

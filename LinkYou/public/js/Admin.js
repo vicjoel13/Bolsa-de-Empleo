@@ -15,10 +15,9 @@ var app = new Vue({
                   console.log(this.users[i].company);
                   table.insertRow().innerHTML =
                       "<td>" + this.users[i].company + "</td>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>"
-                      + "<td><button class='btn btn-success' style='margin-right:10px' >Editar</button><button class='btn btn-danger'>Eliminar</button></td>" 
+                      + "<button type='button' class='el-button el-button--success is-circle'><i class='el-icon-edit'></i></button><button type='button' class='el-button el-button--danger is-circle'><i class='el-icon-delete'></i></button></td>" 
                       
               }
-
 
 
           })

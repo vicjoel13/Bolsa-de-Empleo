@@ -44,8 +44,8 @@
 </table>
 
     </div>
-    <div id="div5">
-      <el-button  type="primary"  name="vermas"   id="vermas"  >Ver Mas<i class="el-icon-view"></i></el-button> 
+    <div style="text-align: center">
+      <el-button  type="primary"  name="vermas"   id="vermas"  style="margin: auto; text-align: center">Mostrar Mas<i class="el-icon-view"></i></el-button> 
     </div>
     
          <!-- Buttom de Post a Job-->
