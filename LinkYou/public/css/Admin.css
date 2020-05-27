@@ -6,20 +6,16 @@
 
 #div5{
   position: absolute;
-  left: 80%;
-  bottom: 8%;
-  margin: 3%;
-  right: 40%;
-  width: 10%;
+  
+  right: 20px;
+  bottom: 3%;
+  margin-top: 20px;
 }
 
 #div6{
-  height: 40%;
- bottom: 15%;
- width: 90%;
-  position: absolute;
-  margin: 3%;
-  height: 50%;
+  margin-top: 20px;
+  margin-left: 3%;
+  margin-right: 3%;
 
 }
 #div2{

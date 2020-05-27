@@ -8,22 +8,20 @@
       <!-- Componente que es donde esta el Nav-->
     </div> 
      <!-- Buscador-->
-      <div id="div2"> 
-        <!-- Input Buscador-->
-       <el-input placeholder="Buscar un trabajo" prefix-icon="el-icon-search" id="search" name="search"  v-model="buscador">
-     </el-input> 
-      </div>
-              <!-- Button Buscar -->
-     <div id="div3"> 
-      <el-button type="primary" icon="el-icon-search" circle></el-button>
-     </div>
-         <!-- Buttom Ver mas-->
-        
-        
-       
-        <div id="post"> 
-          <el-button type="primary"  name="postear"  id="postear" round >Post a Job<i class="el-icon-edit"></i></el-button>
-        </div>
+    
+        <el-form>
+      <el-form-item>
+        <el-col :span="10" style="margin-left: 3%">
+          <el-input placeholder="Buscar un trabajo" prefix-icon="el-icon-search" id="search" name="search"  v-model="buscador"></el-input> 
+        </el-col>
+        <el-col :span="6" style="margin-left: 2%">
+          <el-button type="primary" icon="el-icon-search"></el-button>
+        </el-col>
+        <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
+          <el-button type="primary" icon="el-icon-edit">Crear empleo</el-button>        
+       </el-col>
+      </el-form-item>
+    </el-form>
         
         
       
@@ -47,8 +45,7 @@
 
     </div>
     <div id="div5">
-      <el-button  type="primary"  name="vermas"   id="vermas" 
-        round  >Ver Mas<i class="el-icon-view"></i></el-button> 
+      <el-button  type="primary"  name="vermas"   id="vermas"  >Ver Mas<i class="el-icon-view"></i></el-button> 
     </div>
     
          <!-- Buttom de Post a Job-->
