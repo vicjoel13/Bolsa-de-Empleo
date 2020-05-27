@@ -1,3 +1,14 @@
+var turu = document.getElementById('turu').value;
+
+var vm5 = new Vue({
+  el: "#appJob",
+  data() {
+    return {
+      hola: turu 
+    } 
+  }
+});
+
 var Main = {
     data() {
       return {
@@ -33,7 +44,8 @@ var Main = {
         console.log(key, keyPath);
       }
 
-    }
+    },
+
   }
 var Ctor = Vue.extend(Main)
 new Ctor().$mount('#app2')

@@ -3,10 +3,13 @@
 @section('content')
 <div class="all">
     <div class="">
-        <div id="app2">
+        <div id="appJob">
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
                 <div class="grid-container">
-                    
+
+                    <input v-model="hola" id="turu" value="jajaj">
+                    <p>@{{hola}}</p>
+
                     <!-- div Company name -->
                     <div class="item1">Company name</div>
 

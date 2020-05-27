@@ -9,13 +9,12 @@ var app = new Vue({
             .then(response => {
                 this.users = response.data.data;
                 table = document.getElementById('tbody');
-                var tableContent = document.getElementById('tr');
+
 
                 for (i = 0; i < response.data.data.length; i++) {
                     console.log(this.users[i].company);
                     table.insertRow().innerHTML =
-                    
-                        "<th scope='row'>" + this.users[i].company + "</th>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>"
+                        "<tr><th scope='row'>" + this.users[i].company + "</th>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td></tr>"
                         ;
                 }
             })

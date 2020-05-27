@@ -34,12 +34,13 @@
           </tr>
         </thead>
         <tbody id="tbody">
-          <tr id="tr"></tr> 
+          <tr id="tr" ></tr> 
         </tbody>
       </table>
       <div style="text-align: center">
         <el-button type="primary" icon="el-icon-view" style="margin: auto; text-align: center">Mostrar mas</el-button>        
       </div>
+      <button onclick="window.location.href='https://youtube.com'">YouTube</button>
     </div>
     
  </div>
