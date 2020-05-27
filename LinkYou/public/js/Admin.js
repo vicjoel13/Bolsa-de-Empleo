@@ -2,7 +2,7 @@ var app = new Vue({
   el: "#app_AdminJobs",
   data: {
       users: [],
-      buscador: [""]
+      buscador: ''
   },
   mounted: function() {
       axios.get('http://127.0.0.1:8000/api/Jobs')
