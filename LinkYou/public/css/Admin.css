@@ -48,12 +48,11 @@
  
 }
 #div9{
-  height: 40%;
- bottom: 15%;
+  
  width: 90%;
-  position: absolute;
+  position: relative;
   margin: 3%;
-  height: 50%;
+ bottom: 40%;
 
 }
 #div7{
