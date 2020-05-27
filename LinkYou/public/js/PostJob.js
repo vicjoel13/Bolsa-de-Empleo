@@ -2,15 +2,20 @@ var vm5 = new Vue({
     el: "#app_post",
     data() {
         return {
-            ruleForm: {
-              name: '',
-              email: '',
-              password1: '',
-              password2: '',
-              phone: '',
-              country: '',
-              type: '',
-            }
+            job: {
+              company: "",
+              time_type: "",
+              logo: "",
+              URL: "",
+              position: "",
+              location: "",
+              job_category: "",
+              description: "",
+              email: "",
+              application: "",
+              id_company: 25668,
+              isActive: 1
+          }
         }
     },
     methods: {
@@ -31,6 +36,5 @@ var vm5 = new Vue({
         handleSelect(key, keyPath) {
           console.log(key, keyPath);
         }
-  
-      }
+    }
 });
