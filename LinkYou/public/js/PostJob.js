@@ -17,13 +17,8 @@ var app = new Vue({
                 for (i = 0; i < response.data.data.length; i++) {
                     console.log(this.users[i].company);
                     table.insertRow().innerHTML =
-<<<<<<< HEAD
-                        "<tr><th scope='row'>" + this.users[i].company + "</th>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td></tr>"
-                        ;
-=======
                     
                         "<th scope='row'>" + this.users[i].company + "</th>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>"+"<a href='Details/"+this.users[i].id+"'><button class='el-button el-button btn-sm' type='primary'>Mostrar</button></a>";
->>>>>>> 6a0e0a0bd92134d581d0f4558cf05c5bdf3d2d26
                 }
             })
             .catch(error => {
