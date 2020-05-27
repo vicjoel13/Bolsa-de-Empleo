@@ -98,14 +98,17 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="https://unpkg.com/element-ui/lib/index.js"></script>
 
-    <!-- <script src="{{ asset('js/PostJob.js') }}"></script> -->
-
-<!-- import local JavaScript -->
-@if (!Request::is('/ShowJobs'))
+<!-- Scripts For ShowJobs -->
+@if (\Request::is('ShowJobs'))
+    <script src="{{ asset('js/ShowJob.js') }}"></script>
+<!-- Scripts For PostJob -->
+@elseif (\Request::is('Company/post'))
     <script src="{{ asset('js/PostJob.js') }}"></script>
+@else
+<!-- Scripts For PostJob -->
+    <script src="{{ asset('js/JobDetails.js') }}"></script>
 @endif
-    <!-- <script src="{{ asset('js/02.js') }}"></script> -->
-    <!-- <script src="{{ asset('js/Admin.js') }}"></script> -->
+
 <!-- import ImgUr JavaScript -->
     <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
     <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
