@@ -23,7 +23,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ShowJobs', 'user@showJobs');
 Route::get('/Company/post','PostController@PostJob');
 Route::get('/Company/{id}','user@IndexC');
-Route::get('/Details','user@seeJob');
+Route::get('/Details/{id}','user@seeJob');
 Route::get('/Admin','user@AdminIndex');
 Route::get('/moreJobs','user@viewMore');
 
