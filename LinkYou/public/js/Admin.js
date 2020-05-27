@@ -14,8 +14,8 @@ var app = new Vue({
               for (i = 0; i < response.data.data.length; i++) {
                   console.log(this.users[i].company);
                   table.insertRow().innerHTML =
-                      "<td>" + this.users[i].company + "</td>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>"
-                      + "<button type='button' class='el-button el-button--success is-circle'><i class='el-icon-edit'></i></button><button type='button' class='el-button el-button--danger is-circle'><i class='el-icon-delete'></i></button></td>" 
+                      "<th scope='row'>" + this.users[i].company + "</th>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>"
+                      + "<button type='button'  class='el-button el-button--danger is-circle'><i class='el-icon-delete'></i></button><button type='button' class='el-button el-button--primary is-circle'><i class='el-icon-edit'></i></> </td>" 
                       
               }
 
@@ -24,5 +24,10 @@ var app = new Vue({
           .catch(error => {
               console.log(error);
           });
-  }
+  },
+ 
 });
+
+function hola(){
+    alert("Hola");
+}

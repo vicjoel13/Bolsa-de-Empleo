@@ -27,21 +27,20 @@
       
        <!-- Tabla -->
     <div id="div6">
-    <table class="table table-striped">
-  <thead class="thead-primary">
-    <tr >
-      <th scope="col">Compañia</th>
-      <th scope="col">Posicion</th>
-      <th scope="col">Ubicacion</th>
-      <th scope="col">Acciones</th>
-    
-    </tr>
-  </thead>
-  <tbody id="tbodyadmin">
-  <tr id="tradmin"></tr>
-    
-  </tbody>
-</table>
+    <table class="table table-hover" style="margin-top: 10px">
+        <thead class="thead-primary" style="background-color: #409EFF;color: white">
+          <tr >
+            <th scope="col">Compañia</th>
+            <th scope="col">Posicion</th>
+            <th scope="col">Ubicacion</th>
+            <th scope="col">Operaciones</th>
+           
+          </tr>
+        </thead>
+        <tbody id="tbodyadmin">
+          <tr id="tradmin"></tr> 
+        </tbody>
+      </table>
 
     </div>
     <div style="text-align: center">
