@@ -18,7 +18,7 @@
           <el-button type="primary" icon="el-icon-search"></el-button>
         </el-col>
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
-          <el-button type="primary" icon="el-icon-edit">Crear empleo</el-button>        
+          <a href="/Company/post"> <el-button type="primary" icon="el-icon-edit">Crear empleo</el-button> </a>       
        </el-col>
       </el-form-item>
     </el-form>
@@ -33,7 +33,7 @@
             <th scope="col">Compañia</th>
             <th scope="col">Posicion</th>
             <th scope="col">Ubicacion</th>
-            <th scope="col">Acciones</th>
+            <th scope="col">Operaciones</th>
            
           </tr>
         </thead>

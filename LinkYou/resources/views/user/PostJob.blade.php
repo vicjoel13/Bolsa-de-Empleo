@@ -8,7 +8,6 @@
         <div id="app2">
             <form action="" method="post">
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
-
                 <!-- inputs Informacion -->
                 <el-form-item label="Categoria:" required>
                     <el-col :span="11">

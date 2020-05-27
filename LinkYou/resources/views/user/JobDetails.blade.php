@@ -7,17 +7,24 @@
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
                 <div class="grid-container">
 
+<<<<<<< HEAD
                     <input v-model="hola" id="turu" value="jajaj">
                     <p>@{{hola}}</p>
 
+=======
+                
+                <input v-model="hola" id="turu" value="{{$id}}">
+                    <p>@{{hola}}</p>
+                    
+>>>>>>> 6a0e0a0bd92134d581d0f4558cf05c5bdf3d2d26
                     <!-- div Company name -->
-                    <div class="item1">Company name</div>
+                    <div class="item1">@{{job.company}}</div>
 
                     <!-- div Company Image -->
-                    <div class="item2"><img id="imgCompany" src="https://i.imgur.com/ohZYczI.jpg" alt=""></div>
+                    <div class="item2"><img id="imgCompany" v-bind:src="iman" alt=""></div>
                     
                     <!-- div Posicon - Horario -->
-                    <div class="item3">Posicion - horario</div> 
+                    <div class="item3"></div> 
                     
                     <!-- div Sueldo -->
                     <div class="item4">Sueldo - $$$$</div>
@@ -31,5 +38,24 @@
         </div>
     </div>
 </div>
+{{-- <script>
+var app = new Vue({
+    el: "#app_JobDetail",
+    data: {
+        job: [],
+        buscador: [""]
+    },
+    mounted: function() {
+        axios.get('http://127.0.0.1:8000/api/Job/{{$id}}')
+            .then(response => {
+                this.job = response.data.data;
+                console.log(this.job)
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
+});
 
+</script> --}}
 @endsection

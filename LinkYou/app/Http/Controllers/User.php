@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+
+use App\Http\Controllers\PostController as post;
 use App\create_post_table;
 class User extends Controller
 {
@@ -23,10 +25,9 @@ class User extends Controller
             }
 
         //esto lleva el id del Post
-        public function seeJob(){
-         
-        
-            return view('user.JobDetails');
+        public function seeJob($id){
+        $post=$id;
+            return view('user.JobDetails',['id'=>$id]);
             }
 
             public function AdminIndex(){
