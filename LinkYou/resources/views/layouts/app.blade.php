@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>LinkYou</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -110,4 +110,5 @@
 <!-- import ImgUr JavaScript -->
 <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
 <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
+
 </html>
