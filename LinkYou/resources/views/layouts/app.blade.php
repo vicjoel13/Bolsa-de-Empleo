@@ -104,6 +104,7 @@
 <!-- Scripts For PostJob -->
 @elseif (\Request::is('Company/post'))
     <script src="{{ asset('js/PostJob.js') }}"></script>
+<!-- Scripts For PostJob -->
 @elseif (\Request::is('Company/edit'))
     <script src="{{ asset('js/EditJob.js') }}"></script>
 @else
