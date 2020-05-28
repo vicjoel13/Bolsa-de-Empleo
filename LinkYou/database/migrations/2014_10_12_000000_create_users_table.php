@@ -23,6 +23,10 @@ class CreateUsersTable extends Migration
             $table->string('address');
             $table->string('logo');
             
+
+            $table->string('address')->default('1');
+            $table->string('logo')->default('1');
+
             $table->rememberToken();
             $table->timestamps();
         });

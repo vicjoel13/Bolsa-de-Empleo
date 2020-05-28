@@ -36,7 +36,7 @@
    
 </head>
 <body>
-    <div id="app">
+    <div id="app809">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
@@ -124,7 +124,10 @@
     <script src="{{ asset('js/PostJob.js') }}"></script>
 @elseif (\Request::is('Company/edit'))
     <script src="{{ asset('js/EditJob.js') }}"></script>
-@else
+
+<!-- Scripts For PostJob -->
+@elseif (\Request::is('Admin'))
+    <script src="{{ asset('js/AdminJobs.js') }}"></script>
 <!-- Scripts For PostJob -->
     <script src="{{ asset('js/JobDetails.js') }}"></script>
 @endif
@@ -133,5 +136,6 @@
     <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
     <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
 </body>
+
 
 </html>
