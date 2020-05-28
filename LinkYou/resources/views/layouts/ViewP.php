@@ -164,7 +164,7 @@ background-color: rgb(245, 243, 253);
 }
 
 .text{
-  right: 120px;
+  left: 320px;
 }
             .cad{
                 position: absolute;
