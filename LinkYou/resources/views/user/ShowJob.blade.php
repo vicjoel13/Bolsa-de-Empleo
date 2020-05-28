@@ -44,7 +44,6 @@
         <el-button type="primary" icon="el-icon-view" style="margin: auto; text-align: center">Mostrar mas</el-button>        
       </div>
     </div>
-    
  </div>
    
 @endsection

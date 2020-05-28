@@ -87,14 +87,12 @@
                 </div>
             </div>
         </nav>
-
         <main class="py-4">
             @yield('content')
         </main>
     </div>
-</body>
-
 <!-- JS, Popper.js, and jQuery -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <!-- Dependencias Necesarias-->
@@ -110,5 +108,30 @@
 <!-- import ImgUr JavaScript -->
 <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
 <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<!-- Dependencias Necesarias-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+<!-- Scripts For ShowJobs -->
+@if (\Request::is('ShowJobs'))
+    <script src="{{ asset('js/ShowJob.js') }}"></script>
+<!-- Scripts For PostJob -->
+@elseif (\Request::is('Company/post'))
+    <script src="{{ asset('js/PostJob.js') }}"></script>
+@elseif (\Request::is('Company/edit'))
+    <script src="{{ asset('js/EditJob.js') }}"></script>
+@else
+<!-- Scripts For PostJob -->
+    <script src="{{ asset('js/JobDetails.js') }}"></script>
+@endif
+
+<!-- import ImgUr JavaScript -->
+    <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
+</body>
 
 </html>
