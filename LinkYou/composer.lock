@@ -741,7 +741,6 @@
         },
         {
             "name": "laravel/framework",
-<<<<<<< HEAD
             "version": "v7.13.0",
             "source": {
                 "type": "git",
@@ -752,18 +751,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/laravel/framework/zipball/6fa69bfbd57744a5bbec5538ce483919b3fd625f",
                 "reference": "6fa69bfbd57744a5bbec5538ce483919b3fd625f",
-=======
-            "version": "v7.12.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/framework.git",
-                "reference": "c2fff1e9879494a6f853593b3c517dc9922bbb51"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c2fff1e9879494a6f853593b3c517dc9922bbb51",
-                "reference": "c2fff1e9879494a6f853593b3c517dc9922bbb51",
->>>>>>> b32c1d52f8aa4d861fc5ca147a78becf782bca8c
                 "shasum": ""
             },
             "require": {
@@ -903,11 +890,7 @@
                 "framework",
                 "laravel"
             ],
-<<<<<<< HEAD
             "time": "2020-05-26T14:32:43+00:00"
-=======
-            "time": "2020-05-19T17:09:00+00:00"
->>>>>>> b32c1d52f8aa4d861fc5ca147a78becf782bca8c
         },
         {
             "name": "laravel/tinker",
@@ -1446,7 +1429,6 @@
         },
         {
             "name": "opis/closure",
-<<<<<<< HEAD
             "version": "3.5.3",
             "source": {
                 "type": "git",
@@ -1457,18 +1439,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/opis/closure/zipball/cac47092144043d5d676e2e7cf8d0d2f83fc89ca",
                 "reference": "cac47092144043d5d676e2e7cf8d0d2f83fc89ca",
-=======
-            "version": "3.5.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/opis/closure.git",
-                "reference": "2e3299cea6f485ca64d19c540f46d7896c512ace"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/2e3299cea6f485ca64d19c540f46d7896c512ace",
-                "reference": "2e3299cea6f485ca64d19c540f46d7896c512ace",
->>>>>>> b32c1d52f8aa4d861fc5ca147a78becf782bca8c
                 "shasum": ""
             },
             "require": {
@@ -1516,11 +1486,7 @@
                 "serialization",
                 "serialize"
             ],
-<<<<<<< HEAD
             "time": "2020-05-25T09:32:45+00:00"
-=======
-            "time": "2020-05-21T20:09:36+00:00"
->>>>>>> b32c1d52f8aa4d861fc5ca147a78becf782bca8c
         },
         {
             "name": "phpoption/phpoption",

@@ -102,11 +102,14 @@
 @if (\Request::is('ShowJobs'))
     <script src="{{ asset('js/ShowJob.js') }}"></script>
 <!-- Scripts For PostJob -->
-@elseif (\Request::is('Company/post'))
+@elseif (\Request::is('Company/post/*'))
     <script src="{{ asset('js/PostJob.js') }}"></script>
 <!-- Scripts For PostJob -->
-@elseif (\Request::is('Company/edit'))
+@elseif (\Request::is('Company/edit/*'))
     <script src="{{ asset('js/EditJob.js') }}"></script>
+<!-- Scripts For PostJob -->
+@elseif (\Request::is('Admin'))
+    <script src="{{ asset('js/AdminJobs.js') }}"></script>
 @else
 <!-- Scripts For PostJob -->
     <script src="{{ asset('js/JobDetails.js') }}"></script>

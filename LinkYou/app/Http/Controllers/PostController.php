@@ -18,9 +18,9 @@ class PostController extends Controller
         return view('user.PostJob');
     }
 
-    public function EditJob()
+    public function EditJob($id)
     {
-        return view('user.EditJob');
+        return view('user.EditJob',['id'=>$id]);
     }
 
     public function store(Request $request)

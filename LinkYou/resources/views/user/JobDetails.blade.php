@@ -7,8 +7,7 @@
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
                 <div class="grid-container">
   
-                    <input v-model="hola" name="turu" id="turu" value="{{$id}}">
-                    <p>@{{hola}}</p>
+                    <input v-model="hola" name="turu" id="turu" value="{{$id}}" hidden>
                     
                     <!-- div Company name -->
                     <div class="item1">@{{job.company}}</div>

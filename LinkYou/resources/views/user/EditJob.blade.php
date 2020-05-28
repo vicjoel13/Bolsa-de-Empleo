@@ -1,29 +1,34 @@
 @extends('layouts.app')
-
 @section('content')
+
 <div class="all">
     <h3> Editar empleo</h3>
     <hr>
     <div class="principal">
         <div id="app_post">
             <el-form :model="ruleForm" ref="ruleForm" method="POST" label-width="120px" class="demo-ruleForm">
+
+                <input v-model="ruleForm.id" name="idEdit" id="idEdit" value="{{$id}}" hidden>
+
                 <!-- inputs Informacion -->
                 <el-form-item label="Categoria:" required>
                     <el-col :span="11">
-                        <el-select v-model="ruleForm.job_category" placeholder="Seleccionar categoria" style="width: 100%;">                            
+                        <el-select v-model="ruleForm.job_category" filterable placeholder="Seleccionar categoria" style="width: 100%;">                            
                             <el-option label="Opcion 1" value="opt1"></el-option>
                             <el-option label="Opcion 2" value="opt2"></el-option>
                             <el-option label="Opcion 3" value="opt3"></el-option>
                         </el-select>
                     </el-col>
                 </el-form-item>
+
+                
                 
                 <!-- select Tipo de Empleo-->
                 <el-form-item label="Tipo de empleo:">
-                    <el-radio-group v-model="ruleForm.time_type">
-                    <el-radio label="Full time"></el-radio>
-                    <el-radio label="Part time"></el-radio>
-                    <el-radio label="Free lance"></el-radio>
+                    <el-radio-group v-model="ruleForm.time_type" >
+                        <el-radio label="Full time"></el-radio>
+                        <el-radio label="Part time" ></el-radio>
+                        <el-radio label="Free lance" ></el-radio>
                     </el-radio-group>
                 </el-form-item>
 

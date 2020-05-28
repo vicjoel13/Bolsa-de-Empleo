@@ -2,13 +2,14 @@ var vm5 = new Vue({
     el: "#app_post",
     data() {
         return {
+          id: "",
             ruleForm: {
               created_at: "",
               updated_at: "",
-              company: "123",
-              time_type: "",
+              company: "",
               logo: "",
               URL: "",
+              time_type: "Full time",
               position: "",
               location: "",
               job_category: "",
@@ -20,9 +21,17 @@ var vm5 = new Vue({
         }
     },
     beforeMount(){
-      this.ruleForm.company = $("input[name=company]").val();
-      this.ruleForm.logo = $("input[name=logo]").val();
-      this.ruleForm.email = $("input[name=email]").val();
+      this.id = $("input[name=idEdit]").val();
+    },
+    mounted() {
+      axios.get('http://127.0.0.1:8000/api/Job/'+this.id)
+      .then(response => {
+          this.ruleForm = response.data.data;
+          console.log(this.ruleForm)
+      })
+      .catch(error => {
+          console.log(error);
+      });
     },
     methods: {
       update (){
