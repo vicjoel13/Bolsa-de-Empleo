@@ -18,6 +18,11 @@ class PostController extends Controller
         return view('user.PostJob');
     }
 
+    public function EditJob()
+    {
+        return view('user.EditJob');
+    }
+
     public function store(Request $request)
     {
         $post=$request->isMethod('put') ? create_post_table::findOrFail($request->id):new create_post_table;

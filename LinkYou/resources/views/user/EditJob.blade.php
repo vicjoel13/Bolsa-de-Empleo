@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="all">
-    <h3> Publicar empleo</h3>
+    <h3> Editar empleo</h3>
     <hr>
     <div class="principal">
         <div id="app_post">
@@ -56,7 +56,6 @@
                 
                 <!-- Botones -->
                 <el-form-item>
-                    <el-button type="success" v-on:click="create()">Crear</el-button>
                     <el-button type="primary" v-on:click="update()">Actualizar</el-button>
                     <el-button v-on:click="">Limpiar</el-button>
                 </el-form-item>
