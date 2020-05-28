@@ -6,8 +6,7 @@
         <div id="appJob">
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="120px" class="demo-ruleForm">
                 <div class="grid-container">
-
-                
+  
                 <input v-model="hola" id="turu" value="{{$id}}">
                     <p>@{{hola}}</p>
                     

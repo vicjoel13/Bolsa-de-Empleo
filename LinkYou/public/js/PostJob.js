@@ -12,7 +12,7 @@ var app = new Vue({
             .then(response => {
                 this.users = response.data.data;
                 table = document.getElementById('tbody');
-                var tableContent = document.getElementById('tr');
+
 
                 for (i = 0; i < response.data.data.length; i++) {
                     console.log(this.users[i].company);
