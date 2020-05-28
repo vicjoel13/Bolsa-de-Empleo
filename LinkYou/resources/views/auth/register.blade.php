@@ -54,8 +54,8 @@ body {
 
         
                                 <select name="type" id="type" class="form-control @error('type') is-invalid @enderror">
-                                    <option value="1">Desempleado</option>
-                                    <option value="0">Compañia</option>
+                                    <option value="0">Desempleado</option>
+                                    <option value="1">Compañia</option>
 
                                 
                                 </select>

@@ -92,6 +92,7 @@
         </main>
     </div>
 <!-- JS, Popper.js, and jQuery -->
+    <script src="path/from/html/page/to/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <!-- Dependencias Necesarias-->
@@ -107,7 +108,7 @@
 <!-- Scripts For PostJob -->
 @elseif (\Request::is('Company/edit/*'))
     <script src="{{ asset('js/EditJob.js') }}"></script>
-<!-- Scripts For PostJob -->
+    <!-- Scripts For PostJob -->
 @elseif (\Request::is('Admin'))
     <script src="{{ asset('js/AdminJobs.js') }}"></script>
 @else
@@ -118,5 +119,6 @@
 <!-- import ImgUr JavaScript -->
     <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
     <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
+
 </body>
 </html>

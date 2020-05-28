@@ -50,6 +50,10 @@
          <!-- Buttom de Post a Job-->
     
     </div>
-
+    <script>
+    $( "#delete" ).click(function() {
+      location.reload();
+    });
+    </script>
 
 @endsection

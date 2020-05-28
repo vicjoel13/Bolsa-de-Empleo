@@ -51,6 +51,13 @@ class PostController extends Controller
         $jobs=create_post_table::orderBy('created_at', 'ASC')->paginate(10);
         return Post::collection($jobs);
     }
+
+    public function indexCompany($id)
+    {
+        //get jobs of the company
+        $jobs=create_post_table::orderBy('created_at', 'ASC')->where('id_company','$id')->paginate(10);
+        return Post::collection($jobs);
+    }
     public function show($id)
     {
        //get Job
