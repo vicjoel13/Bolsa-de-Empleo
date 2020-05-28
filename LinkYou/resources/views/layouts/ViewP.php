@@ -178,7 +178,7 @@ background-color: rgb(245, 243, 253);
 <div class="collapse navbar-collapse" id="navbarNav">
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
-    <button type="button" class="btn btn-outline-light">Primary</button>
+    <button type="button" class="btn btn-outline-light">Inicio</button>
     </li>
     
   </ul>
