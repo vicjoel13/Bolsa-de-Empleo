@@ -157,8 +157,11 @@ background-color: rgb(245, 243, 253);
 </div>
 </nav>
 
-<div class="container" >
+<div class="jumbotron text-center">
+  <h1>Ingeniero de Softwre</h1>
+  <p>We specialize in blablabla</p>
 </div>
+
       
 
 
