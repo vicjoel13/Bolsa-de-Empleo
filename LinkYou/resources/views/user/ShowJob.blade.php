@@ -18,9 +18,9 @@
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
         <el-col :span="3" style="margin-left: 2%; right: 10px;">
         
-
-
-          <el-button type="primary" icon="el-icon-edit" >Crear empleo</el-button>        
+@if(Auth::user()->type=="1" )
+          <el-button type="primary" icon="el-icon-edit" >Crear empleo</el-button>      
+          @endif  
        </el-col>
       </el-form-item>
     </el-form>
