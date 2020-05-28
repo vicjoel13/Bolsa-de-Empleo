@@ -43,7 +43,7 @@ class PostController extends Controller
             return new Post($post); 
          }
 
-        return view('company.indexC');
+     
     }
     public function index()
     {
