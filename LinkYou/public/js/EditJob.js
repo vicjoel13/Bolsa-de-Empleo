@@ -25,11 +25,11 @@ var vm5 = new Vue({
       this.ruleForm.email = $("input[name=email]").val();
     },
     methods: {
-      create (){
-        axios.post("http://127.0.0.1:8000/api/create/Job", this.ruleForm).then((result) => {
-        console.log(result);
-        }); 
-      },
+      update (){
+        axios.put("http://127.0.0.1:8000/api/update/Job", this.ruleForm).then((result) => {
+          console.log(result);
+        });
+      }
     }
 });
 

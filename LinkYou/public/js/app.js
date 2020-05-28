@@ -49701,9 +49701,9 @@
      * or customize the JavaScript scaffolding to fit your unique needs.
      */
     
-    var app = new Vue({
+    /*var app = new Vue({
       el: '#app4'
-    });
+    });*/
     
     /***/ }),
     
