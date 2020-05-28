@@ -178,11 +178,11 @@ background-color: rgb(245, 243, 253);
 </div>
 <div class="container-fluid">
 <h2><strong>Descripcion del puesto</strong></h2>
-      <h5>Asesora en las políticas de desarrollo de sistemas de información de una organización.
-Evalúa y seleccionar los sistemas de computación, los equipos de procesamiento y comunicación, así como los sistemas de base para las organizaciones.
-Controla el cumplimiento de las pautas técnicas que rigen el funcionamiento y la utilización de recursos informáticos en cada organización</h5>
+      <p>Asesora en las políticas de desarrollo de sistemas de información de una organización.<br>
+Evalúa y seleccionar los sistemas de computación, los equipos de procesamiento y comunicación, así como los sistemas <br>de base para las organizaciones.
+Controla el cumplimiento de las pautas <br>técnicas que rigen el funcionamiento y la utilización de recursos informáticos en cada organización</p>
      <h2> <strong>Requsitos</strong> </h2>
-      <p>Our vision</p>      
+          
       <ul>-Grado universitario o estudiante de término del área de informática, sistemas, software o telemática. </ul>
       <ul>-Mínimo de dos (2) años de experiencia como desarrollador de aplicaciones.</ul>
       <ul>-Manejo de Programación Orientada a Objetos, POO. -Manejo del manejo del lenguaje de programación JAVA o C#.</ul>
