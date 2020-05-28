@@ -1,11 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row justify-content-center" >
+        <div class="col-md-6">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header" style="background: #424242;color: #FCFCFC; padding: 16px;" >{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
