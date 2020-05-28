@@ -175,21 +175,7 @@ background-color: rgb(245, 243, 253);
            }
          
 </style>
-<nav class="navbar  navbar-default navbar-expand-lg  " >
-      
-  <a class="navbar-brand mb-0 h1" >LinkYou!</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNav">
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item active">
-    <button type="button" class="btn btn-outline-light">Inicio</button>
-    </li>
-    
-  </ul>
-</div>
-</nav>
+
 
 <div class="jumbotron text-center" style="background-image: url('https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');  background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
   
