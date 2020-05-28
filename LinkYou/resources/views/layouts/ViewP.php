@@ -16,7 +16,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-      
+        <script src="https://kit.fontawesome.com/8b823756ec.js" crossorigin="anonymous"></script>
         
       
          <!-- Styles -->
@@ -213,8 +213,10 @@ Controla el cumplimiento de las pautas <br>técnicas que rigen el funcionamiento
     <p class="card-text"  align="right"><small class="text-muted">28/05/2020</small></p>
   </div>
 </div>
-      
-<div class="container-fluid bg-grey" style="background-color:red;">
+<button type="button"  align="right" class="btn btn-outline-dark" >Secondary</button>
+      <br>
+      <br>
+<div class="container-fluid bg-grey" style="background-color:whitesmoke;">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
