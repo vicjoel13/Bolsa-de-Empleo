@@ -162,6 +162,10 @@ background-color: rgb(245, 243, 253);
                 top: 240px;
                 right: 120px;
 }
+
+.text{
+  right: 120px;
+}
             .cad{
                 position: absolute;
                 top: 50%;
@@ -222,7 +226,7 @@ Controla el cumplimiento de las pautas <br>técnicas que rigen el funcionamiento
 <div class="container-fluid bg-grey" align="center" style="background-color:#F5F0F5;">
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
-    <div class="col-sm-5">
+    <div class="col-sm-5 text">
       <p>Contactanos estamos siempre atentos.</p>
       <p><svg class="bi bi-shop" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M0 15.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zM3.12 1.175A.5.5 0 0 1 3.5 1h9a.5.5 0 0 1 .38.175l2.759 3.219A1.5 1.5 0 0 1 16 5.37v.13h-1v-.13a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.13H0v-.13a1.5 1.5 0 0 1 .361-.976l2.76-3.22z"/>
