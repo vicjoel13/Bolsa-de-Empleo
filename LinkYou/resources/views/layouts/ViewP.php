@@ -158,9 +158,9 @@ background-color: rgb(245, 243, 253);
 .texto-encima{
                 position: absolute;
                 top: 240px;
-                right: 10px;
+                right: 120px;
 }
-            .card{
+            .cad{
                 position: absolute;
                 top: 50%;
                 left: 80%;
@@ -204,15 +204,12 @@ Controla el cumplimiento de las pautas <br>técnicas que rigen el funcionamiento
       <ul>-Conocimientos de UML o equivalente.</ul>
     </div>
     
-    <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-    
+    <div class="card texto-encima">
+  <div class="card-header">Header</div>
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">Conten</div>
+  <div class="card-footer">Footer</div>
+</div>
       
     
         </body>
