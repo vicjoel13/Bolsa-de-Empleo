@@ -176,12 +176,21 @@ background-color: rgb(245, 243, 253);
   <h1>Ingeniero de Softwre</h1>
   <p>Santo Domingo</p>
 </div>
-<div class="container-fluid"
-<h2>Our Values</h2>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>      
+<div class="container-fluid">
+<h2><strong>Descripcion del puesto</strong></h2>
+      <h5>Asesora en las políticas de desarrollo de sistemas de información de una organización.
+Evalúa y seleccionar los sistemas de computación, los equipos de procesamiento y comunicación, así como los sistemas de base para las organizaciones.
+Controla el cumplimiento de las pautas técnicas que rigen el funcionamiento y la utilización de recursos informáticos en cada organización</h5>
+     <h2> <strong>Requsitos</strong> </h2>
+      <p>Our vision</p>      
+      <ul>-Grado universitario o estudiante de término del área de informática, sistemas, software o telemática. </ul>
+      <ul>-Mínimo de dos (2) años de experiencia como desarrollador de aplicaciones.</ul>
+      <ul>-Manejo de Programación Orientada a Objetos, POO. -Manejo del manejo del lenguaje de programación JAVA o C#.</ul>
+      <ul>-Manejo de bases de datos relacionales. -Manejo de SQL. -Conocimientos de UML o equivalente.</ul>
 
-</div>
+
+    </div>
+    
 
     
       
