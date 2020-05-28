@@ -4,6 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Icono -->
+    <link rel="icon" href="https://image.flaticon.com/icons/svg/121/121156.svg" type="image/x-icon">
+
+    <!-- Fonts -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b823756ec.js" crossorigin="anonymous"></script>
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -19,6 +31,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/details.css') }}" rel="stylesheet">
+
         <!-- import CSS -->
 <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
 <link href="{{ asset('css/Admin.css') }}"  rel="stylesheet" type="text/css">
@@ -41,7 +55,7 @@
       
          <!-- Styles -->
         <style>
-            html, body{
+            /* html, body{
                 background-color: #fff;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -121,79 +135,10 @@
 
             .m-b-md {
                 margin-bottom: 30px;
-            }
+            } */
         </style>
 
-    <style >
-      
-       .navbar {
-  margin-bottom: 0;
-  background-color:steelblue;
-  z-index: 9999;
-  border: 0;
-  font-size: 14px !important;
-  line-height: 1.42857143 !important;
-  letter-spacing: 4px;
-  border-radius: 0;
-}
-
-.navbar li a, .navbar .navbar-brand {
-  color: #fff ;
-}
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-  color:red !important;
-  background-color: #fff !important;
-}
-
-.navbar-default .navbar-toggle {
-  border-color: transparent;
-  color: #fff !important;
-}
-
-.container{
-
-background-color: rgb(245, 243, 253);
-
-    padding: 80px 120px;
-}
-
-.th{
-  background-color:red;
-}
-.jumbotron {
-  background-color: #636b6f; /* Orange */
-  color: #ffffff;
-  padding: 100px 25px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-
-}
-.container-fluid {
-  padding: 60px 50px;
-}
-
-.texto-encima{
-                position: absolute;
-                top: 240px;
-                right: 120px;
-}
-
-.text{
-  left: 380px;
-}
-            .cad{
-                position: absolute;
-                top: 50%;
-                left: 80%;
-                 transform: translate(-50%, -50%);
-                 color:white;
-           }
-         
-</style>
-
+    
 </head>
 <body>
     <div id="app">

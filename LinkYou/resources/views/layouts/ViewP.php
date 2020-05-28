@@ -19,7 +19,7 @@
         <script src="https://kit.fontawesome.com/8b823756ec.js" crossorigin="anonymous"></script>
         
       
-         <!-- Styles -->
+        <!-- Styles -->
         <style>
             html, body{
                 background-color: #fff;
