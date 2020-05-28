@@ -110,7 +110,7 @@
       
        .navbar {
   margin-bottom: 0;
-  background-color:steelblue;
+  background-color:#F9F4F9;
   z-index: 9999;
   border: 0;
   font-size: 12px !important;
