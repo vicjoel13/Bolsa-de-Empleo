@@ -19,12 +19,7 @@
           <el-menu-item index="2-3">Informacion de Empleo</el-menu-item>
           
         </el-submenu>
-        <el-submenu index="3">
-        <template slot="title">Opciones</template>
-        <el-menu-item index="2-1">Registrar Empleo</el-menu-item>
-        <el-menu-item index="2-2">Editar Empleo</el-menu-item>
-        <el-menu-item index="2-3">Editar Usuario</el-menu-item>
-        
+       
       </el-submenu>
         <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">Salir</a></el-menu-item>
       </el-menu>

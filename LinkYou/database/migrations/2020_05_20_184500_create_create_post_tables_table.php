@@ -27,7 +27,7 @@ class CreateCreatePostTablesTable extends Migration
             $table->string('email');
             $table->string('application');
             $table->unsignedBigInteger('id_company');
-            $table->boolean('isActive')->default('0');
+            $table->boolean('isActive')->default('1');
             
         });
     }
