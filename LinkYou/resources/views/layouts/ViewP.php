@@ -120,7 +120,7 @@
 }
 
 .navbar li a, .navbar .navbar-brand {
-  color: #fff ;
+  color:  ;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
