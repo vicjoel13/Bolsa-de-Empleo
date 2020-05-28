@@ -224,7 +224,7 @@ Controla el cumplimiento de las pautas <br>técnicas que rigen el funcionamiento
   <div class="row">
     <div class="col-sm-5">
       <p>Contactanos estamos siempre atentos.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Santo Domingo, RD</p>
+      <p><svg class="bi bi-shop" width="32" height="32" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z"/></svg>Santo Domingo, RD</p>
       <p><span class="glyphicon glyphicon-phone"></span> 809-458-8965</p>
       <p><span class="glyphicon glyphicon-envelope"></span> LINKYOU@gmail.com</p>
     </div>
