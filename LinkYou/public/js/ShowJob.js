@@ -1,8 +1,28 @@
+Vue.component('todo-item', {
+    props: ['todo'],
+    template: '<li>{{todo.text}}</li>'
+
+})
+
+Vue.component('lista', {
+    props: ['nombre','apellidos'],
+    template: '<li>{{nombre}}</li>'
+})
+
+Vue.component('carta' {
+    
+})
+
 var app = new Vue({
     el: "#app_ShowJobs",
     data: {
         users: [],
         buscador: [""],
+        groceryList: [
+            { id: 0, text: 'Vegetables' },
+            { id: 1, text: 'Cheese' },
+            { id: 2, text: 'Whatever else humans are supposed to eat' }
+        ],
     },
     mounted: function() {
         axios.get('http://127.0.0.1:8000/api/Jobs')

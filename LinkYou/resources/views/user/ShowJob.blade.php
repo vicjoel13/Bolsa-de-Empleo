@@ -4,6 +4,10 @@
   <!-- Div App relacionado con el archivo js -->
   <div id="app_ShowJobs" >
 
+    <ol>
+      <todo-item v-for="item in groceryList" v-bind:todo="item" ></todo-item>
+    </ol>
+
     <!-- Buscador-->
     <el-form>
       <el-form-item>
@@ -18,9 +22,9 @@
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
         <el-col :span="3" style="margin-left: 2%; right: 10px;">
         
-@if(Auth::user()->type=="1" )
-          <el-button type="primary" icon="el-icon-edit" >Crear empleo</el-button>      
-          @endif  
+            @if(Auth::user()->type=="1" )
+              <el-button type="primary" icon="el-icon-edit" >Crear empleo</el-button>      
+            @endif  
        </el-col>
       </el-form-item>
     </el-form>
