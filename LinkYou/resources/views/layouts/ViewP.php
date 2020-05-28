@@ -187,7 +187,7 @@ background-color: rgb(245, 243, 253);
 </div>
 </nav>
 
-<div class="jumbotron text-center" style="background-image: url('https://images.unsplash.com/photo-1558986377-c44f6a2b50f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
+<div class="jumbotron text-center" style="background-image: url('https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');  background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
   
   <h1>Ingeniero de Softwre</h1>
   <p>Santo Domingo</p>
@@ -216,7 +216,6 @@ Controla el cumplimiento de las pautas <br>técnicas que rigen el funcionamiento
     <p class="card-text"  align="right"><small class="text-muted">28/05/2020</small></p>
   </div>
 </div>
-<button type="button"  align="right" class="btn btn-outline-dark" >Secondary</button>
       <br>
       <br>
 <div class="container-fluid bg-grey" style="background-color:whitesmoke;">
