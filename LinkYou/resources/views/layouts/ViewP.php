@@ -136,6 +136,8 @@
 .container{
 
 background-color: rgb(245, 243, 253);
+
+    padding: 80px 120px;
 }
 
 .th{
