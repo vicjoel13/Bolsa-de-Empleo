@@ -37,6 +37,10 @@
                     <el-input type="text" v-model="ruleForm.URL" placeholder="URL"></el-ipunt>
                 </el-form-item>
 
+                <?php echo '<el-form-item label="URL">
+                    <el-input type="text" v-model="ruleForm.URL" placeholder="URL"></el-ipunt>
+                </el-form-item>' ?>
+
                 <!-- inputs Informacion -->
                 <el-form-item label="Informacion" required>
                     <el-col :span="11" style="margin-right: 20px;">
