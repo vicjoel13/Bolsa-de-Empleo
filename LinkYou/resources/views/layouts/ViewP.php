@@ -178,7 +178,7 @@ background-color: rgb(245, 243, 253);
 <div class="collapse navbar-collapse" id="navbarNav">
   <ul class="navbar-nav ml-auto">
     <li class="nav-item active">
-      <a class="nav-link" href="Prestamos.php">Inicio <span class="sr-only">(current)</span></a>
+    <button type="button" class="btn btn-outline-light">Primary</button>
     </li>
     
   </ul>
