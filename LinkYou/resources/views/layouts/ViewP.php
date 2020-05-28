@@ -110,10 +110,10 @@
       
        .navbar {
   margin-bottom: 0;
-  background-color:#F9F4F9;
+  background-color:steelblue;
   z-index: 9999;
   border: 0;
-  font-size: 12px !important;
+  font-size: 14px !important;
   line-height: 1.42857143 !important;
   letter-spacing: 4px;
   border-radius: 0;
@@ -205,7 +205,8 @@ Controla el cumplimiento de las pautas <br>técnicas que rigen el funcionamiento
       <ul>-Mínimo de dos (2) años de experiencia como desarrollador de aplicaciones.</ul>
       <ul>-Manejo de Programación Orientada a Objetos, POO.</ul>
       <ul> -Manejo del manejo del lenguaje de programación JAVA o C#.</ul>
-      <ul>-Manejo de bases de datos relacionales. -Manejo de SQL. </ul>
+      <ul>-Manejo de bases de datos relacionales.</ul>
+      <ul> -Manejo de SQL. </ul>
       <ul>-Conocimientos de UML o equivalente.</ul>
     </div>
     
