@@ -107,6 +107,7 @@
     <body>
 
     <style >
+      
        .navbar {
   margin-bottom: 0;
   background-color:steelblue;
@@ -140,6 +141,20 @@ background-color: rgb(245, 243, 253);
 .th{
   background-color:red;
 }
+.jumbotron {
+  background-color: #636b6f; /* Orange */
+  color: #ffffff;
+  padding: 100px 25px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+
 </style>
 <nav class="navbar  navbar-default navbar-expand-lg  " >
       
@@ -159,11 +174,14 @@ background-color: rgb(245, 243, 253);
 
 <div class="jumbotron text-center">
   <h1>Ingeniero de Softwre</h1>
-  <p>We specialize in blablabla</p>
+  <p>Santo Domingo</p>
 </div>
+<div class="container-fluid"
+<h2>Our Values</h2>
+      <h4><strong>MISSION:</strong> Our mission lorem ipsum..</h4>
+      <p><strong>VISION:</strong> Our vision Lorem ipsum..</p>      
 
-      
-
+</div>
 
     
       
