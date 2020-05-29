@@ -4534,6 +4534,7 @@ input[type=button].btn-block {
 }
 
 .navbar {
+  background:steelblue;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -4548,6 +4549,8 @@ input[type=button].btn-block {
 .navbar .container-md,
 .navbar .container-lg,
 .navbar .container-xl {
+  /* parte 1 */
+  background-color:steelblue;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -4555,6 +4558,7 @@ input[type=button].btn-block {
 }
 
 .navbar-brand {
+  color: #FFF;
   display: inline-block;
   padding-top: 0.32rem;
   padding-bottom: 0.32rem;
@@ -4570,6 +4574,7 @@ input[type=button].btn-block {
 }
 
 .navbar-nav {
+  background-color:steelblue;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -4583,6 +4588,7 @@ input[type=button].btn-block {
 }
 
 .navbar-nav .dropdown-menu {
+  
   position: static;
   float: none;
 }
@@ -4630,6 +4636,7 @@ input[type=button].btn-block {
   .navbar-expand-sm > .container-md,
   .navbar-expand-sm > .container-lg,
   .navbar-expand-sm > .container-xl {
+    background-color:steelblue;
     padding-right: 0;
     padding-left: 0;
   }
@@ -4870,6 +4877,7 @@ input[type=button].btn-block {
 }
 
 .navbar-light .navbar-brand {
+  background-color:steelblue;
   color: rgba(0, 0, 0, 0.9);
 }
 

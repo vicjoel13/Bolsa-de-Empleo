@@ -31,12 +31,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/details.css') }}" rel="stylesheet">
 
-        <!-- import CSS -->
-<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-<link href="{{ asset('css/Admin.css') }}"  rel="stylesheet" type="text/css">
-<!-- import JavaScript -->
+    <!-- import CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <link href="{{ asset('css/Admin.css') }}"  rel="stylesheet" type="text/css">
+    <!-- import JavaScript -->
 
    <!-- import local CSS -->
    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
@@ -48,103 +47,20 @@
    <link href="{{ asset('Img Upload/css/style.css') }}" rel="stylesheet" media="screen">
    <link href="{{ asset('Img Upload/css/mobile-style.css')}}" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-           <!-- Fonts -->
+    <!-- Fonts -->
         
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        
-      
-         <!-- Styles -->
-        <style>
-            /* html, body{
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-                
-            }
-
-           
-        
-
-            .full-height {
-                height: 11vh;
-            }
-
-            .flex-center {
-               
-                display: flex;
-                justify-content: center;
-                border-color: transparent;
-                margin-bottom: 0;
-                z-index: 9999;
-                border: 0;
-                font-size: 12px !important;
-                line-height: 1.42857143 !important;
-                letter-spacing: 4px;
-                border-radius: 0;
-            }
-
-            .texto-encima{
-                position: absolute;
-                top: 240px;
-                right: 10px;
-}
-            .carousel-caption{
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                 transform: translate(-50%, -50%);
-                 color:white;
-           }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-        
-            .carousel{
-                position:absolute;
-                top:0;
-            }
-
-
-            .links > a {
-                color:black;
-                padding: 0 25px;
-                font-size: 14px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            } */
-        </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+       
+    <link href="{{ asset('css/details.css') }}" rel="stylesheet">
+       
 
     
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav  class="navbar navbar-expand-md navbar-light shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/') }}" style="color: #FFF">
                  LinkYou
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -171,7 +87,7 @@
                             @endif
                         @else
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="navbarDropdown" style="color: #FFF" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -192,7 +108,7 @@
                 </div>
             </div>
         </nav>
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
     </div>
@@ -225,7 +141,11 @@
 <!-- Scripts For PostJob -->
     <script src="{{ asset('js/JobDetails.js') }}"></script>
 @endif
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b823756ec.js" crossorigin="anonymous"></script>
 <!-- import ImgUr JavaScript -->
     <script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
     <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
