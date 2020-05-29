@@ -28,7 +28,7 @@ Route::post('create/Job','PostController@store');
 //Update/Edit
 Route::put('update/Job','PostController@store');
 //Delete Article
-Route::delete('Job/{id}','PostController@destroy');
+Route::delete('Job/delete/{id}','PostController@destroy');
 //get the categorys
 Route::get('category','job_categoryController@index');
 //Delete category

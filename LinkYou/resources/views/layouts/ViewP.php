@@ -19,7 +19,7 @@
         <script src="https://kit.fontawesome.com/8b823756ec.js" crossorigin="anonymous"></script>
         
       
-        <!-- Styles -->
+         <!-- Styles -->
         <style>
             html, body{
                 background-color: #fff;
@@ -30,10 +30,6 @@
                 margin: 0;
                 
             }
-
-           
-        
-
             .full-height {
                 height: 11vh;
             }
@@ -108,7 +104,7 @@
 
     <style >
       
-       .navbar {
+  .navbar {
   margin-bottom: 0;
   background-color:steelblue;
   z-index: 9999;

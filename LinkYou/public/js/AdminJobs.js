@@ -1,3 +1,11 @@
+Vue.component('carta' ,{
+  props:{
+      info: {},
+      url: '',
+  },
+  template: '<div style="display: block; "><div style="margin-left: 10px;margin-bottom: 10px" class="el-col el-col-4 el-col-offset-0"><div class="el-card is-always-shadow"><!----><div class="el-card__body" style="padding: 0px;"><img style="min-width: 235px; min-height: 235px;" src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image"> <div style="padding: 14px;"><span><strong>{{info.company}}</strong></span><br> <span>{{info.time_type}}</span> <div class="bottom clearfix"><time class="time"></time><a><button type="button" @click="borrar(url)" class="el-button button el-button--text"><!----><!----><span>Mostrar</span></button></a></div></div></div></div></div></div>'
+})
+
 var app = new Vue({
   el: "#app_AdminJobs",
   data: {
@@ -10,14 +18,6 @@ var app = new Vue({
               this.users = response.data.data;
               table = document.getElementById('tbodyadmin');
               var tableContent = document.getElementById('tradmin');
-
-            for (i = 0; i < response.data.data.length; i++) {
-                console.log(this.users[i].company);
-                table.insertRow().innerHTML =
-                    "<th scope='row'>" + this.users[i].company + "</th>" + "<td>" + this.users[i].position + "</td>" + "<td>" + this.users[i].location + "</td>"
-                    + "<button type='button'   class='el-button el-button--danger is-circle' v-on:click="+this.delete(+this.users[i].id)+" ><i class='el-icon-delete'></i><a href=''></button><button type='button' class='el-button el-button--primary is-circle'><i class='el-icon-edit'></i></> </td>" 
-                    
-            }
           })
           .catch(error => {
               console.log(error);
@@ -25,11 +25,11 @@ var app = new Vue({
   },
   methods:{
       
-      delete(id){
-      axios.delete('http://127.0.0.1:8000/api/Job/delete/' + id)
-        
+      borrar(id){
+        axios.delete('http://127.0.0.1:8000/api/Job/delete/' + id) 
         .then(response => {
           console.log(response);
+          location.reload();
 
         });
            
