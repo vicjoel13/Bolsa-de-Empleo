@@ -1,0 +1,109 @@
+html, body{
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+    
+}
+.full-height {
+    height: 11vh;
+}
+
+.flex-center {
+   
+    display: flex;
+    justify-content: center;
+    border-color: transparent;
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 240px;
+    right: 10px;
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+     color:white;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.carousel{
+    position:absolute;
+    top:0;
+}
+
+.links > a {
+    color:black;
+    padding: 0 25px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}  
+  .th{
+    background-color:red;
+  }
+  .jumbotron {
+    background-color: #636b6f; /* Orange */
+    color: #ffffff;
+    padding: 100px 25px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  
+  .texto-encima{
+                  position: absolute;
+                  top: 240px;
+                  right: 120px;
+  }
+
+.text{
+left: 380px;
+}
+.cad{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color:white;
+}
