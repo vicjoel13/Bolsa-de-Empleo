@@ -48,59 +48,33 @@ h3{
     border-bottom: 2px solid #409EFF;
 }
 
+/* Un lio */
+.time {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  .bottom {
+    margin-top: 13px;
+    line-height: 12px;
+  }
 
-html, body{
-    height: 100%;
-}
+  .button {
+    padding: 0;
+    float: right;
+  }
 
-.item1 { 
-    grid-area: header; 
-    border-bottom: 2px solid #409EFF;
-    border-left: 2px solid #409EFF;
-    text-align: center; 
-    padding-bottom: 10px;
-}
+  .image {
+    width: 100%;
+    display: block;
+  }
 
-.item2 { 
-    grid-area: left;
-    width: fit-content;
-}
-
-.item3 { 
-    grid-area: main; 
-    text-align: center; 
-    border-bottom: 2px solid #409EFF; 
-    border-right: 2px solid #409EFF;
-    border-left: 2px solid #409EFF; 
-    padding-bottom: 10px;
-}
-
-.item4 { 
-    grid-area: right; 
-    text-align: center; 
-    border-bottom: 2px solid #409EFF; 
-    padding-bottom: 10px;
-}
-
-.item5 { 
-    border-left: 2px solid #409EFF;
-    grid-area: footer; 
-}
-
-.grid-container {
-    height: 100px;
-  display: grid;
-  grid-template-areas:
-    'left header header header header header header header header header header'
-    'left main main main main main right right right right right'
-    'left footer footer footer footer footer footer footer footer footer footer';
-  /* background-color: #2196F3; */
-  /* padding: 10px; */
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  /* text-align: center; */
-  /* border: 2px solid #409EFF; */
-  font-size: 30px;
-}
+  .clearfix:before,
+  .clearfix:after {
+      display: table;
+      content: "";
+  }
+  
+  .clearfix:after {
+      clear: both
+  }

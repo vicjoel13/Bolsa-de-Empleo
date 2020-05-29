@@ -19,12 +19,14 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 //show all jobs
 Route::get('Jobs', "PostController@index");
+//show all jobs of the company
+Route::get('Jobs/{id}', "PostController@indexCompany");
 //list one Job
 Route::get('Job/{id}','PostController@show');
 //Create post 
 Route::post('create/Job','PostController@store');
 //Update/Edit
-Route::put('create/Job','PostController@store');
+Route::put('update/Job','PostController@store');
 //Delete Article
 Route::delete('Job/{id}','PostController@destroy');
 //get the categorys

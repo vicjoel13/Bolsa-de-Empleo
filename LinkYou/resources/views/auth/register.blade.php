@@ -1,6 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+
+<style>
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+}
+    </style>
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -45,8 +54,8 @@
 
         
                                 <select name="type" id="type" class="form-control @error('type') is-invalid @enderror">
-                                    <option value="1">Desempleado</option>
-                                    <option value="0">Compañia</option>
+                                    <option value="0">Desempleado</option>
+                                    <option value="1">Compañia</option>
 
                                 
                                 </select>
