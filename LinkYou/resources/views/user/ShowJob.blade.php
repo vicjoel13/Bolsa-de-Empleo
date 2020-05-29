@@ -11,11 +11,11 @@
     <el-form>
       <el-form-item>
         <el-col :span="10" style="margin-left: 3%">
-          <el-input placeholder="Buscar un trabajo" prefix-icon="el-icon-search" id="search" name="search"  v-model="buscador" v-on:keyup.enter="searchData"></el-input> 
+          <el-input type="text" placeholder="Buscar un trabajo" prefix-icon="el-icon-search"   v-model="buscador" ></el-input> 
    
         </el-col>
         <el-col :span="6" style="margin-left: 2%">
-          <el-button type="primary" icon="el-icon-search"></el-button>
+          <el-button type="primary" icon="el-icon-search" v-on:click="users"></el-button>
         </el-col>
 
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
@@ -31,7 +31,7 @@
     <!--Table-->
 
     <div style="margin:0 auto; text-align: center; margin-left: 100px">
-      <carta v-for="user in users" v-bind:info="user" url="Details/" ></carta>
+      <carta v-for="user in filteredList" v-bind:info="user" url="Details/" ></carta>
     </div>
     <div style="text-align: center">
       <el-button type="primary" icon="el-icon-view" style="margin: auto; text-align: center; margin-bottom: 20px">Mostrar mas</el-button>        
