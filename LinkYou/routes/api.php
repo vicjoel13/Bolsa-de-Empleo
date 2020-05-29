@@ -37,5 +37,8 @@ Route::delete('category/{id}','job_categoryController@destroy');
 Route::post('create/category','job_categoryController@store');
 //Update/Edit category
 Route::put('create/category','job_categoryController@store');
-//list one category
+//list one category of job
 Route::get('category/{id}','job_categoryController@show');
+//list Job of a specific Category
+Route::get('Jobs/category/{category}','PostController@showCategory');
+
