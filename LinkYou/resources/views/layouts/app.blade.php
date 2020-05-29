@@ -57,13 +57,13 @@
     
 </head>
 <body>
-<<<<<<< HEAD
+
     <div id="app809">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-=======
+
     <div id="app">
         <nav  class="navbar navbar-expand-md navbar-light shadow-sm">
->>>>>>> 0029ee8f6af2cfdc69e0674d72d3a00e2817e355
+
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}" style="color: #FFF">
                  LinkYou
