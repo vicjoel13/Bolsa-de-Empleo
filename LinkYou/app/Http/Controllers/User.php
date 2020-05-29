@@ -18,7 +18,7 @@ class User extends Controller
     public function IndexC($id){
         $jobs=create_post_table::all()->where('id_company',$id);
     
-        return view('company.indexC',['jobs'=>$jobs]);
+        return view('company.ShowJobC',['id'=>$id]);
         }
         public function viewMore(){
             return view('user.MoreJobs');

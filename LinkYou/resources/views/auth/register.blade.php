@@ -67,8 +67,9 @@ body {
                             @enderror
                             </div>
                             </div>
+                            
                             <!-- If the user select a company type this div will show the additional information for the company-->
-                        <div name="company" id="company" style="display: none;">
+                        <div name="company" id="company" style="display: none">
                             <div class="form-group row">
                                 <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('address') }}</label>
                                 <div class="col-md-6">

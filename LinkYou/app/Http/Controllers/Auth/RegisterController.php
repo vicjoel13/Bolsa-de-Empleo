@@ -71,7 +71,7 @@ class RegisterController extends Controller
 {
     $this->validator($request->all())->validate();
 
-    event(new Registered($user = $this->create($request->all())));
+    event(new Registered($User = $this->create($request->all())));
 
     return redirect($this->redirectPath())->with('message', 'User Succesfuly Registerd');
 }
@@ -94,7 +94,7 @@ class RegisterController extends Controller
                 'password' => Hash::make($data['password']),
                 'type' => $data['type'],
                 'logo' => $data['logo'],
-                'address' => $data['address'],
+                'address' => $data['address']
             ]);
 
         }
