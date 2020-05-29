@@ -196,7 +196,7 @@
             @yield('content')
         </main>
     </div>
-<<<<<<< HEAD
+
 <!-- JS, Popper.js, and jQuery -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -216,7 +216,6 @@
 <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
 
 
-=======
     <!-- JS, Popper.js, and jQuery -->
     <script src="path/from/html/page/to/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -224,7 +223,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8b823756ec.js" crossorigin="anonymous"></script>
     
->>>>>>> a1deb556dfb89556ac7d2cb37dac79105d1b7704
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <!-- Dependencias Necesarias-->
@@ -240,17 +238,17 @@
 <!-- Scripts For PostJob -->
 @elseif (\Request::is('Company/edit/*'))
     <script src="{{ asset('js/EditJob.js') }}"></script>
-<<<<<<< HEAD
+
 
 <!-- Scripts For PostJob -->
 @elseif (\Request::is('Admin'))
     <script src="{{ asset('js/AdminJobs.js') }}"></script>
-=======
+
     <!-- Scripts For PostJob -->
 @elseif (\Request::is('Admin'))
     <script src="{{ asset('js/AdminJobs.js') }}"></script>
 @else
->>>>>>> a1deb556dfb89556ac7d2cb37dac79105d1b7704
+
 <!-- Scripts For PostJob -->
     <script src="{{ asset('js/JobDetails.js') }}"></script>
 @endif
