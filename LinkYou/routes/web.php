@@ -27,4 +27,4 @@ Route::get('/Company/{id}','user@IndexC');
 Route::get('/Details/{id}','user@seeJob');
 Route::get('/Admin','user@AdminIndex');
 Route::get('/moreJobs','user@viewMore');
-
+Route::get('/Admin/create','PostController@CreateCategory');

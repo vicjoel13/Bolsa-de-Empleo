@@ -40,7 +40,7 @@ class job_categoryController extends Controller
         $job_category=$request->isMethod('put') ? create_category_tables::findOrFail($request->id):new create_category_tables;
        
         $job_category->id =$request->input('id');
-        $job_category->id =$request->input('category');
+        $job_category->category=$request->input('category');
         if($job_category->save()){
             return new category($job_category); 
          }

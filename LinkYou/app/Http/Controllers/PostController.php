@@ -21,8 +21,12 @@ class PostController extends Controller
     public function EditJob($id)
     {
         return view('user.EditJob',['id'=>$id]);
+        
     }
-
+    public function CreateCategory()
+    {
+        return view('admin.CreateCategory');
+    }
     public function store(Request $request)
     {
         $post=$request->isMethod('put') ? create_post_table::findOrFail($request->id):new create_post_table;
@@ -48,10 +52,13 @@ class PostController extends Controller
     public function index()
     {
         //get jobs
-        $jobs=create_post_table::orderBy('created_at', 'ASC')->where('isActive','1')->paginate(10);
+        $jobs=create_post_table::orderBy('created_at', 'ASC')->
+        where('isActive','1')->
+        paginate(10);
+
         return Post::collection($jobs);
     }
-
+    
     public function indexCompany($id)
     {
         //get jobs of the company
