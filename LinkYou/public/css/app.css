@@ -4534,7 +4534,7 @@ input[type=button].btn-block {
 }
 
 .navbar {
-  background:steelblue;
+  background:#409EFF;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -4550,7 +4550,7 @@ input[type=button].btn-block {
 .navbar .container-lg,
 .navbar .container-xl {
   /* parte 1 */
-  background-color:steelblue;
+  background-color:#409EFF;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -4574,7 +4574,7 @@ input[type=button].btn-block {
 }
 
 .navbar-nav {
-  background-color:steelblue;
+  background-color:#409EFF;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -4636,7 +4636,7 @@ input[type=button].btn-block {
   .navbar-expand-sm > .container-md,
   .navbar-expand-sm > .container-lg,
   .navbar-expand-sm > .container-xl {
-    background-color:steelblue;
+    background-color:#409EFF;
     padding-right: 0;
     padding-left: 0;
   }
@@ -4877,7 +4877,7 @@ input[type=button].btn-block {
 }
 
 .navbar-light .navbar-brand {
-  background-color:steelblue;
+  background-color:#409EFF;
   color: rgba(0, 0, 0, 0.9);
 }
 

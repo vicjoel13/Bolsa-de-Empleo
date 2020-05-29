@@ -19,7 +19,7 @@
 <div class="container-fluid">
 <h2><strong>Descripcion del puesto</strong></h2>
       <p>@{{job.description}}</p>
-     <h2> <strong>Requsitos</strong> </h2>
+     <h2> <strong>Requisitos</strong> </h2>
           
       <p>@{{job.application}}</p>
     </div>
@@ -35,8 +35,8 @@
       <br>
 <div class="container-fluid bg-grey" align="center" style="background-color:#F5F0F5;">
   <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5 text">
+  <div class="row" align="center" style="text-align: center">
+    <div class="col-sm-5" align="center" style="margin: auto">
       <p>Contactanos estamos siempre atentos.</p>
       <p><svg class="bi bi-shop" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path fill-rule="evenodd" d="M0 15.5a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5zM3.12 1.175A.5.5 0 0 1 3.5 1h9a.5.5 0 0 1 .38.175l2.759 3.219A1.5 1.5 0 0 1 16 5.37v.13h-1v-.13a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.13H0v-.13a1.5 1.5 0 0 1 .361-.976l2.76-3.22z"/>
