@@ -247,6 +247,8 @@
     <!-- Scripts For PostJob -->
 @elseif (\Request::is('Admin'))
     <script src="{{ asset('js/AdminJobs.js') }}"></script>
+    @elseif(\Request::is('Company/*'))
+    <script src="{{ asset('js/ShowJobCompany.js') }}"></script>
 @else
 
 <!-- Scripts For PostJob -->
