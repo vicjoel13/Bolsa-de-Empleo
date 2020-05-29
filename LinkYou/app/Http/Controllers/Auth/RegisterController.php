@@ -55,9 +55,9 @@ class RegisterController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'type' => ['required', 'string', 'max:30'],
-            'logo' => ['nullable', 'string', 'max:30'],
-            'address' => ['nullable', 'string', 'max:255'],
+            'type' => ['required', 'string', 'max:225'],
+            'logo' => ['required', 'string', 'max:225'],
+            'address' => ['required', 'string', 'max:255'],
         ]);
     }
 
@@ -71,7 +71,7 @@ class RegisterController extends Controller
 {
     $this->validator($request->all())->validate();
 
-    event(new Registered($user = $this->create($request->all())));
+    event(new Registered($User = $this->create($request->all())));
 
     return redirect($this->redirectPath())->with('message', 'User Succesfuly Registerd');
 }
