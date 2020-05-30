@@ -2,18 +2,22 @@
 @section('content')
 
   <!-- Div App relacionado con el archivo js -->
-  <div id="app_ShowJobs" style="margin-top: 20px">
+  
 
   
     
-    
+  <div id="app_ShowJobs" style="margin-top: 20px">
     <!-- Buscador-->
+   
+   
     <el-form>
       <el-form-item>
         <el-col :span="10" style="margin-left: 3%">
           <el-input type="text" placeholder="Buscar un trabajo" prefix-icon="el-icon-search"   v-model="buscador" ></el-input> 
    
         </el-col>
+        
+        
         <el-col :span="6" style="margin-left: 2%">
           <el-button type="primary" icon="el-icon-search" v-on:click="users"></el-button>
         </el-col>
