@@ -69,5 +69,5 @@ var app = new Vue({
 }
      
 });
-Vue.component('pagination', require('laravel-vue-pagination'));
+Vue.component('page-number', require('laravel-vue-pagination'));
 

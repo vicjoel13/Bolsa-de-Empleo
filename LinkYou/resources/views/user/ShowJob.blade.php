@@ -10,7 +10,7 @@
       <el-form-item>
         <el-col :span="10" style="margin-left: 3%">
           <el-input type="text" placeholder="Buscar un trabajo" prefix-icon="el-icon-search"   v-model="buscador" ></el-input> 
-   
+          <page-number :data="users" @pagination-change-page="getResults"></page-number>
         </el-col>
         <el-col :span="6" style="margin-left: 2%">
           <el-button type="primary" icon="el-icon-search" v-on:click="users"></el-button>
@@ -32,7 +32,7 @@
       <carta v-for="user in filteredList" v-bind:info="user" url="Details/" ></carta>
       
     </div>
-    <page-number :data="users" @pagination-change-page="getResults"></page-number>
+ 
     
  
     <div style="text-align: center">
