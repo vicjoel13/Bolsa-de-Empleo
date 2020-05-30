@@ -59,7 +59,6 @@
 <body>
 
     <div id="app809">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
 
     <div id="app">
         <nav  class="navbar navbar-expand-md navbar-light shadow-sm">
@@ -112,12 +111,15 @@
                     </ul>
                 </div>
             </div>
+</div>
+</div>
         </nav>
+
         <main>
             @yield('content')
         </main>
     </div>
-
+    </div>
 <!-- JS, Popper.js, and jQuery -->
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -159,8 +161,6 @@
 <!-- Scripts For PostJob -->
 @elseif (\Request::is('Company/edit/*'))
     <script src="{{ asset('js/EditJob.js') }}"></script>
-
-
 <!-- Scripts For PostJob -->
 @elseif (\Request::is('Admin'))
     <script src="{{ asset('js/AdminJobs.js') }}"></script>

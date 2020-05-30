@@ -27,7 +27,7 @@
       
        <!-- Tabla -->
     <div id="div6">
-      <carta v-for="user in users" v-bind:info="user" @click.native="borrar(user.id)"></carta>
+      <carta v-for="user in filteredList" v-bind:info="user" @click.native="borrar(user.id)"></carta>
     </div>
     <div style="text-align: center">
       <el-button  type="primary"  name="vermas"   id="vermas"  style="margin: auto; text-align: center">Mostrar Mas<i class="el-icon-view"></i></el-button> 
