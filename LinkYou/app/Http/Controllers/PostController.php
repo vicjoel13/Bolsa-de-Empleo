@@ -48,7 +48,7 @@ class PostController extends Controller
     public function index()
     {
         //get jobs
-        $jobs=create_post_table::orderBy('created_at', 'ASC')->paginate(10);
+        $jobs=create_post_table::orderBy('created_at', 'ASC')->where('isActive','1')->paginate(10);
         return Post::collection($jobs);
     }
 
@@ -64,6 +64,14 @@ class PostController extends Controller
        $jobs=create_post_table::findOrFail($id);
 
        //return SINGLE Job RESOURCE
+       return new Post($jobs);
+    }
+    public function showCategory($category)
+    {
+       //get Job by category
+       $jobs=create_post_table::orderBy('created_at', 'ASC')->where(['job_category'=>$category ,'isActive'=>'1'])->paginate(20);
+
+       //return jobs of that category
        return new Post($jobs);
     }
 
