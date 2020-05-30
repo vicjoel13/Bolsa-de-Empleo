@@ -8,7 +8,7 @@ Vue.component('lista', {
     props: ['nombre','apellidos'],
     template: '<li>{{nombre}}</li>'
 });
-Vue.component('pagination', require('laravel-vue-pagination'));
+
 Vue.component('carta' ,{
     props:{
         info: {},
@@ -69,4 +69,5 @@ var app = new Vue({
 }
      
 });
+Vue.component('pagination', require('laravel-vue-pagination'));
 

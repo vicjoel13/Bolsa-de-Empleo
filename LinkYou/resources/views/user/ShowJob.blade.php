@@ -32,7 +32,7 @@
       <carta v-for="user in filteredList" v-bind:info="user" url="Details/" ></carta>
       
     </div>
-    <pagination :data="user" @pagination-change-page="getResults"></pagination>
+    <page-number :data="users" @pagination-change-page="getResults"></page-number>
     
  
     <div style="text-align: center">
