@@ -40,6 +40,7 @@
     </el-form>
 
     <!--Table-->
+    <page :data="users" @pagination-change-page="getResults"></page>
 
     <div style="margin:0 auto; text-align: center; margin-left: 100px">
       <carta v-for="user in filteredList" v-bind:info="user" url="Details/" ></carta>
