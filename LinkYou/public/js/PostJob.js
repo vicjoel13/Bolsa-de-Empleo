@@ -16,13 +16,20 @@ var vm5 = new Vue({
               email: "",
               application: "",
               id_company: 25668,
-          }
+          },
+          categories:[]
         }
     },
     beforeMount(){
       this.ruleForm.company = $("input[name=company]").val();
       this.ruleForm.logo = $("input[name=logo]").val();
       this.ruleForm.email = $("input[name=email]").val();
+    },
+    mounted: function() {
+      axios.get("http://127.0.0.1:8000/api/category").then((result) => {
+        this.categories = result.data.data;
+        console.log(this.categories);
+      });
     },
     methods: {
       create (){
