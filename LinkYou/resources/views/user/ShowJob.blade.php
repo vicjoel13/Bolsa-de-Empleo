@@ -2,11 +2,9 @@
 @section('content')
 
   <!-- Div App relacionado con el archivo js -->
-  <div id="app_ShowJobs" style="margin-top: 20px">
+  <div id="app_ShowJobs" style="margin-top: 20px" class="card-body">
 
-  
-    
-    
+   
     <!-- Buscador-->
     <el-form>
       <el-form-item>
@@ -32,12 +30,16 @@
 
     <div style="margin:0 auto; text-align: center; margin-left: 100px">
       <carta v-for="user in filteredList" v-bind:info="user" url="Details/" ></carta>
+      
     </div>
+    <pagination :data="user" @pagination-change-page="getResults"></pagination>
+    
+ 
     <div style="text-align: center">
       <el-button type="primary" icon="el-icon-view" style="margin: auto; text-align: center; margin-bottom: 20px">Mostrar mas</el-button>        
     </div>
-
+  
 
  </div>
-   
+ 
 @endsection

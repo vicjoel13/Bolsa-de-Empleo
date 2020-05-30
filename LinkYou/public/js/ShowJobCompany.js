@@ -11,7 +11,7 @@ var vm5 = new Vue({
       this.hola = $("input[name=turu]").val();
     },
     mounted() {
-    axios.get('http://127.0.0.1:8000/api/Jobs/'+this.hola)
+    axios.get('api/Jobs/'+this.hola)
     .then(response => {
             this.users = response.data.data;
             var table = document.getElementById('tbody');

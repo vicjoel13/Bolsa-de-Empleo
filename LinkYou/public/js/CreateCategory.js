@@ -9,7 +9,7 @@ var vm5 = new Vue({
     },
     methods: {
       create (){
-        axios.post("http://127.0.0.1:8000/api/create/category", this.ruleForm).then((result) => {
+        axios.post("api/create/category", this.ruleForm).then((result) => {
         console.log(result);
 
         }); 

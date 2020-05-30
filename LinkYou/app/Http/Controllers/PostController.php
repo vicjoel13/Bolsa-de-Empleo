@@ -54,7 +54,7 @@ class PostController extends Controller
         //get jobs
         $jobs=create_post_table::orderBy('created_at', 'ASC')->
         where('isActive','1')->
-        get();
+        paginate(10);
 
         return Post::collection($jobs);
     }

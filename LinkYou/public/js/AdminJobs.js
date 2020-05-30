@@ -20,7 +20,7 @@ var app = new Vue({
     }
 },
   mounted: function() {
-      axios.get('http://127.0.0.1:8000/api/Jobs')
+      axios.get('api/Jobs')
           .then(response => {
               this.users = response.data.data;
               table = document.getElementById('tbodyadmin');
@@ -33,7 +33,7 @@ var app = new Vue({
   methods:{
       
       borrar(id){
-        axios.delete('http://127.0.0.1:8000/api/Job/delete/' + id) 
+        axios.delete('api/Job/delete/' + id) 
         .then(response => {
           console.log(response);
           location.reload();
