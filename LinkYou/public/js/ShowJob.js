@@ -22,6 +22,7 @@ var app = new Vue({
     data: {
         users: '',
         buscador: '',
+        categories:[],
         groceryList: [
             { id: 0, text: 'Vegetables' },
             { id: 1, text: 'Cheese' },
@@ -37,15 +38,26 @@ var app = new Vue({
         })
         }
     },
-
+   
     mounted: function() {
+
+        axios.get("http://127.0.0.1:8000/api/category").then((result) => {
+            this.categories = result.data.data;
+            console.log(this.categories);
+          });
+
+          
         axios.get('http://127.0.0.1:8000/api/Jobs')
         .then(response => {
             this.users = response.data.data;
         })
         .catch(error => {
             console.log(error);
-        });      
+        });
+        
+        
+        
+       
     },
     
         
@@ -54,14 +66,9 @@ var app = new Vue({
         hola (id){
             window.open("Details/"+id, '_self');
         },
-
-        selectCategory(category) {
-           axios.delete('http://127.0.0.1:8000/api/category/' + category)
-              .then(response => {
-                    this.users = response.data.data
-             });
-
-       }
+       
+     
+       
         
     
 }

@@ -22,6 +22,14 @@
           <el-button type="primary" icon="el-icon-search" v-on:click="users"></el-button>
         </el-col>
 
+
+
+        <el-col :span="5">
+          <el-select  placeholder="Seleccionar categoria" style="width: 50%;" style="margin-left: 2%">                            
+              <el-option v-for="cat in categories" v-bind:label="cat.category" v-bind:value="cat.category"></el-option>
+          </el-select>
+        </el-col>
+
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
         <el-col :span="3" style="margin-left: 2%; right: 10px;">
         
