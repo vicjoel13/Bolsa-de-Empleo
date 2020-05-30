@@ -39,7 +39,7 @@ var app = new Vue({
         })
         }
     },
-
+   
     mounted: function() {
         axios.get('api/Jobs')
         .then(response => {
@@ -48,11 +48,15 @@ var app = new Vue({
         })
         .catch(error => {
             console.log(error);
-        });      
+        });
+        
+        
+        
+       
     },
     
         
-          
+    
     methods: {
         getResults(page = 1) {
 			axios.get('api/Jobs?page=' + page)

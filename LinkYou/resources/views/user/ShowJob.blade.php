@@ -2,18 +2,32 @@
 @section('content')
 
   <!-- Div App relacionado con el archivo js -->
-  <div id="app_ShowJobs" style="margin-top: 20px" class="card-body">
+  
 
-   
+  
+    
+  <div id="app_ShowJobs" style="margin-top: 20px">
     <!-- Buscador-->
+   
+   
     <el-form>
       <el-form-item>
         <el-col :span="10" style="margin-left: 3%">
           <el-input type="text" placeholder="Buscar un trabajo" prefix-icon="el-icon-search"   v-model="buscador" ></el-input> 
           <page-number :data="users" @pagination-change-page="getResults"></page-number>
         </el-col>
+        
+        
         <el-col :span="6" style="margin-left: 2%">
           <el-button type="primary" icon="el-icon-search" v-on:click="users"></el-button>
+        </el-col>
+
+
+
+        <el-col :span="5">
+          <el-select  placeholder="Seleccionar categoria" style="width: 50%;" style="margin-left: 2%">                            
+              <el-option v-for="cat in categories" v-bind:label="cat.category" v-bind:value="cat.category"></el-option>
+          </el-select>
         </el-col>
 
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">

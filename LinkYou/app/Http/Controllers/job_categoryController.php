@@ -64,7 +64,7 @@ class job_categoryController extends Controller
      * @param  \App\job_category  $job_category
      * @return \Illuminate\Http\Response
      */
-    public function edit(job_category $job_category)
+    public function edit($job_category)
     {
         //
     }
@@ -76,7 +76,7 @@ class job_categoryController extends Controller
      * @param  \App\job_category  $job_category
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, job_category $job_category)
+    public function update(Request $request,  $job_category)
     {
         //
     }
