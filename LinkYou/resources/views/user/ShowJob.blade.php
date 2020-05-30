@@ -8,8 +8,7 @@
     
   <div id="app_ShowJobs" style="margin-top: 20px">
     <!-- Buscador-->
-   
-   
+  
     <el-form>
       <el-form-item>
         <el-col :span="10" style="margin-left: 3%">
