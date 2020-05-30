@@ -46,11 +46,11 @@
     <div style="margin:0 auto; text-align: center; margin-left: 100px">
       <carta v-for="user in filteredList" v-bind:info="user" url="Details/" ></carta>
       
-    <v-paginator  @update="updateResource"></v-paginator>
+
       
     </div>
  
-    
+
  
     
   

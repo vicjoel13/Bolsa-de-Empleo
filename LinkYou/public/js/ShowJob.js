@@ -26,6 +26,7 @@ var app = new Vue({
         buscador: '',
         categories: [],
         resource_url:'http://127.0.0.1:8000//api/Jobs',
+    
         groceryList: [
             { id: 0, text: 'Vegetables' },
             { id: 1, text: 'Cheese' },
