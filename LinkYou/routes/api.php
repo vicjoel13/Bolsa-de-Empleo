@@ -19,6 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 //show all jobs
 Route::get('Jobs', "PostController@index");
+//show all jobs2
+Route::get('Jobs2', "PostController@index2");
 //show all jobs of the company
 Route::get('Jobs/{id}', "PostController@indexCompany");
 //list one Job
