@@ -164,7 +164,6 @@
 <!-- Scripts For PostJob -->
 @elseif (\Request::is('Admin'))
     <script src="{{ asset('js/AdminJobs.js') }}"></script>
-
     <!-- Scripts For PostJob -->
 @elseif (\Request::is('Admin'))
     <script src="{{ asset('js/AdminJobs.js') }}"></script>
