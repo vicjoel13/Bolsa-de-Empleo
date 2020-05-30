@@ -23,7 +23,7 @@ var app = new Vue({
     data: {
         users: '',
         buscador: '',
-        
+        categories: [],
         groceryList: [
             { id: 0, text: 'Vegetables' },
             { id: 1, text: 'Cheese' },
@@ -49,14 +49,16 @@ var app = new Vue({
         .catch(error => {
             console.log(error);
         });
+        axios.get("api/category").then((result) => {
+            this.categories = result.data.data;
+            console.log(this.categories);
         
-        
+        });
         
        
     },
     
         
-    
     methods: {
         getResults(page = 1) {
 			axios.get('api/Jobs?page=' + page)
@@ -67,11 +69,9 @@ var app = new Vue({
 		},
         hola (id){
             window.open("Details/"+id, '_self');
-        }
+        },
         
-    
-}
-     
+    }
 });
-Vue.component('page-number', require('laravel-vue-pagination'));
+Vue.component('page', require('laravel-vue-pagination'));
 
