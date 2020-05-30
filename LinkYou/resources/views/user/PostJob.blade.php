@@ -11,9 +11,7 @@
                 <el-form-item label="Categoria:" required>
                     <el-col :span="11">
                         <el-select v-model="ruleForm.job_category" placeholder="Seleccionar categoria" style="width: 100%;">                            
-                            <el-option label="Opcion 1" value="opt1"></el-option>
-                            <el-option label="Opcion 2" value="opt2"></el-option>
-                            <el-option label="Opcion 3" value="opt3"></el-option>
+                            <el-option v-for="cat in categories" v-bind:label="cat.category" v-bind:value="cat.category"></el-option>
                         </el-select>
                     </el-col>
                 </el-form-item>

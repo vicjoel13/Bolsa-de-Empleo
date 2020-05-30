@@ -3,7 +3,7 @@ var vm5 = new Vue({
     data() {
         return {
             ruleForm: {
-                category: ""
+                category: []
           }
         }
     },

@@ -20,11 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/ShowJobs', 'user@showJobs');
-Route::get('/Company/post','PostController@PostJob');
-Route::get('/Company/edit/{id}','PostController@EditJob');
-Route::get('/Company/{id}','user@IndexC');
-Route::get('/Details/{id}','user@seeJob');
-Route::get('/Admin','user@AdminIndex');
-Route::get('/moreJobs','user@viewMore');
-Route::get('/Admin/create','PostController@CreateCategory');
+Route::get('/ShowJobs', 'user@showJobs')->middleware('auth');
+Route::get('/Company/post','PostController@PostJob')->middleware('auth');
+Route::get('/Company/edit/{id}','PostController@EditJob')->middleware('auth');
+Route::get('/Company/{id}','user@IndexC')->middleware('auth');
+Route::get('/Details/{id}','user@seeJob')->middleware('auth');
+Route::get('/Admin','user@AdminIndex')->middleware('auth');
+Route::get('/moreJobs','user@viewMore')->middleware('auth');
+Route::get('/Admin/create','PostController@CreateCategory')->middleware('auth');

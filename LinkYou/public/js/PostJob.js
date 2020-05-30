@@ -29,8 +29,7 @@ var vm5 = new Vue({
       axios.get("http://127.0.0.1:8000/api/category").then((result) => {
         this.categories = result.data.data;
         console.log(this.categories);
-
-        });
+      });
     },
     methods: {
       create (){
