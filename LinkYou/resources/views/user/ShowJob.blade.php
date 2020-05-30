@@ -24,8 +24,8 @@
 
 
         <el-col :span="5">
-          <el-select  placeholder="Seleccionar categoria" style="width: 50%;" style="margin-left: 2%">                            
-              <el-option v-for="cat in categories" v-bind:label="cat.category" v-bind:value="cat.category"></el-option>
+          <el-select v-model="selected" placeholder="Seleccionar categoria" style="width: 50%;" style="margin-left: 2%" @change="onChange">                            
+              <el-option v-for="cat in categories" v-bind:label="cat.category" v-bind:value="cat.category"> @{{cat.category }}</el-option>
           </el-select>
         </el-col>
 

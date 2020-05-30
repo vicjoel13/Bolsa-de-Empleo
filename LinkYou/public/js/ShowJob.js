@@ -21,6 +21,7 @@ Vue.component('carta' ,{
 var app = new Vue({
     el: "#app_ShowJobs",
     data: {
+        selected:'',
         users: '',
         buscador: '',
         categories: [],
@@ -66,7 +67,11 @@ var app = new Vue({
                     this.users = response.data.data;
                     
 				});
-		},
+        }, onChange() {
+            axios.get('api/Jobs/category/'+this.selected)
+            .then(response => {
+            this.users = response.data.data;});
+        },
         hola (id){
             window.open("Details/"+id, '_self');
         },
