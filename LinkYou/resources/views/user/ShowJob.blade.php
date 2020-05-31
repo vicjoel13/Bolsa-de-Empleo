@@ -8,7 +8,11 @@
     
   <div id="app_ShowJobs" style="margin-top: 20px">
   
- 
+ <div>
+ <paginate
+ :resource_url="resource_url" @update="updateResource">
+  </paginate>    
+ </div>
     
     <!-- Buscador-->
   
@@ -47,7 +51,6 @@
     <div style="margin:0 auto; text-align: center; margin-left: 100px">
       <carta v-for="user in filteredList" v-bind:info="user" url="Details/" ></carta>
       
-    <v-paginator  @update="updateResource"></v-paginator>
       
     </div>
  
@@ -57,5 +60,10 @@
   
 
  </div>
- 
+ <style lang="css">
+.pagination {
+}
+.page-item {
+}
+</style>
 @endsection
