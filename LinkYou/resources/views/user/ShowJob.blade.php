@@ -6,11 +6,7 @@
     
   <div id="app_ShowJobs" style="margin-top: 20px">
   
- <div>
- <paginate
- :resource_url="resource_url" @update="updateResource">
-  </paginate>    
- </div>
+  
     
     <!-- Buscador-->
   
@@ -45,24 +41,27 @@
     </el-form>
 
     <!--Table-->
-
-
-    <div style="margin:0 auto; text-align: center; margin-left: 100px">
+  <div class="row">
+  <div class="col" style="margin:0 auto; text-align: center; margin-left: 100px">
       <carta v-for="user in filteredList" v-bind:info="user" url="Details/" ></carta>
-      
-      
     </div>
-    <page :data="users" @pagination-change-page="getResults"></page>
-
- 
+  </div>
+    <div class="row">
+      <div class="col" style="text-align: center; margin:10px;">
+      <el-button class="btn btn-default" @click="fetchStories(links.prev)"
+            :disabled="!links.prev">
+        Previous
+    </el-button>
+    <span>Page @{{meta.current_page}} of @{{meta.last_page}}</span>
+    <el-button class="btn btn-default" @click="fetchStories(links.next)"
+            :disabled="!links.next">Next
+    </el-button>
+      </div>
+   
+</div>
     
-  
-
- </div>
- <style lang="css">
-.pagination {
-}
-.page-item {
-}
-</style>
+ 
+ 
+ 
+</div>
 @endsection

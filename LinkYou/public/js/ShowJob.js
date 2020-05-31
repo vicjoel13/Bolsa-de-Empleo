@@ -29,9 +29,9 @@ var app = new Vue({
        	
         users: [],
         buscador: '',
-        resource_url:'http://127.0.0.1:8000/api/Jobs?page=2',
         categories: [],
-        
+        meta: {},
+        links: {},
         groceryList: [
             { id: 0, text: 'Vegetables' },
             { id: 1, text: 'Cheese' },
@@ -52,6 +52,7 @@ var app = new Vue({
         axios.get('api/Jobs')
         .then(response => {
             this.users = response.data.data;
+           
             
         })
         .catch(error => {
@@ -59,9 +60,11 @@ var app = new Vue({
         });
         axios.get("api/category").then((result) => {
             this.categories = result.data.data;
-            console.log(this.categories);
+         
         
         });
+        this.fetchStories()
+
         
     }, 
     
@@ -73,10 +76,31 @@ var app = new Vue({
             window.open("Details/"+id, '_self');
         
         },
-        updateResource(data) {
-            this.users = data
+        fetchStories(page_url) {
+            url = page_url || 'api/Jobs'
+            axios.get(url)
+                .then( response => {
+                    console.log(response.data.links)
+                    this.makePagination(response.data)
+                    this.users = response.data.data
+                });
+        },
+        makePagination(data){
+            let meta = {
+                current_page: data.meta.current_page,
+                last_page: data.meta.last_page,
+                
+            }
+            let links ={
+                next: data.links.next,
+                prev: data.links.prev
+            }
+ 
 
-          }
+            this.meta = meta
+            this.links = links
+
+        }
           
         
     },

@@ -11,7 +11,7 @@ var vm5 = new Vue({
       this.hola = $("input[name=turu]").val();
     },
     mounted() {
-    axios.get('api/Job/'+this.hola)
+    axios.get('/api/Job/'+this.hola)
     .then(response => {
         this.job = response.data.data;
         this.iman = 'https://i.imgur.com/ohZYczI.jpg'
