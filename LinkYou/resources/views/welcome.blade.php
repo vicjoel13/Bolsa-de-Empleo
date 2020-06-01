@@ -140,12 +140,13 @@
                   <li data-target="#demo" data-slide-to="1"></li>
                   <li data-target="#demo" data-slide-to="2"></li>
                   <li data-target="#demo" data-slide-to="3"></li>
+                  <li data-target="#demo" data-slide-to="4"></li>
                 </ul>
               
                 <!-- The slideshow -->
                 <div class="carousel-inner">
-                  <div class="carousel-item active"  width="900" height="657" >
-                    <img class="d-block w-100"    src="https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Presentacion" >
+                  <div class="carousel-item active"  width="1366" height="657" >
+                    <img   class="d-block w-1000"   width="1366"  height="657"  src="https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Comentarios">
                     <div class="carousel-caption d-none d-md-block">
                       <big><h1><br><br><br><strong> &nbsp; LinkYou!</strong></h1></big>
                        <p> <h4>Jobs Positions Right Here</h4></p>
@@ -170,6 +171,7 @@
                         <h5  style="color: black;"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Es el momento de  unirte a la red mas grande del empleos!"</i></h5>
                     </div>
                 </div>
+               
                   <div class="carousel-item">
                     <img class="d-block w-10000 " align="left" width="1366" height="657"  src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Candidatos">
                     <div class="texto-encima" align="left">
