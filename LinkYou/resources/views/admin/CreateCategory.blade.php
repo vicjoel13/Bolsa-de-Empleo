@@ -11,6 +11,11 @@
                     <el-col :span="12">
                         <el-input type="text" v-model="ruleForm.category" placeholder="Categoria"></el-ipunt>
                     </el-col>
+                    <el-col :span="12">
+                        <el-select v-model="ruleForm.pagination" placeholder="Numero de paginacion">
+                        <el-option v-for="number of paginationNumber" v-bind:value="number">@{{number}}</el-option>
+                        </el-select>
+                    </el-col>
                 </el-form-item>
                 <br>
                 <!-- Botones -->

@@ -82,7 +82,13 @@ class PostController extends Controller
        //return SINGLE Job RESOURCE
        return new Post($jobs);
     }
-    public function showCategory($category)
+    public function search($field,$query)
+    {
+        $jobs=create_post_table::orderBy('created_at', 'ASC')->where($field,'LIKE',"%$query%")->paginate(10);
+
+        return Post::collection($jobs);
+    }
+    public function showCategory($category) 
     {
        //get Job by category
        $jobs=create_post_table::orderBy('created_at', 'ASC')->where(['job_category'=>$category ,'isActive'=>'1'])->paginate(20);

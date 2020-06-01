@@ -3,8 +3,11 @@ var vm5 = new Vue({
     data() {
         return {
             ruleForm: {
-                category: []
-          }
+                category: [],
+                pagination: 10
+
+          },
+          paginationNumber: [5,10,15,20,25,30]
         }
     },
     methods: {

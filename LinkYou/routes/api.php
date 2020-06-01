@@ -43,4 +43,6 @@ Route::put('create/category','job_categoryController@store');
 Route::get('category/{id}','job_categoryController@show');
 //list Job of a specific Category
 Route::get('Jobs/category/{category}','PostController@showCategory');
+//search by category on fieldset
+Route::get('search/Jobs/{field}/{query}','PostController@search');
 
