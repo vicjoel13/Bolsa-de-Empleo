@@ -164,7 +164,7 @@
                     <h1  style="color: black;" >  <strong> &nbsp;Variedad</strong></h1>
                         <h4>Numerosas vacantes disponibles en diferentes areas, es tiempo de desarrollar tus habilidades y alcanzar tus metas.</h4>
                         <br>
-                        <P   style="color: purple;" ALIGN="right"> <q>Tanta diversidad aumenta tus probabilidades...Lorena Vasquez</q></p>
+                        <P   style="color: purple;" ALIGN="right"> <q>Tanta diversidad aumenta tus probabilidades...<strong>Lorena Vasquez</strong></q></p>
                         <P  style="color: purple;" ALIGN="left"><q>El mejor sitio web donde encontrar personal altamente calificado...<strong>Juan Perez</strong></q></p>           
                          <br>
                         <h5  style="color: black;"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Es el momento de  unirte a la red mas grande del empleos!"</i></h5>
