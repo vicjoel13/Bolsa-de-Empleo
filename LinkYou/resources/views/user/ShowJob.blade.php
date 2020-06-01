@@ -22,7 +22,15 @@
           <el-button type="primary" icon="el-icon-search" v-on:click="users"></el-button>
         </el-col>
 
-
+        <el-col :span="5">
+          <el-select v-model="selectedField" placeholder="Elija un campo" style="width: 50%;" style="margin-left: 2%">                            
+              <el-option  v-bind:value="todo">Todos</el-option>
+              <el-option  v-bind:value="company">Compañia</el-option>
+              <el-option  v-bind:value="positon">Posicion</el-option>
+              <el-option  v-bind:value="location">Ubicacion</el-option>
+          </el-select>
+          @{{selectedField}}
+        </el-col>
 
         <el-col :span="5">
           <el-select v-model="selected" placeholder="Seleccionar categoria" style="width: 50%;" style="margin-left: 2%" @change="onChange">                            
