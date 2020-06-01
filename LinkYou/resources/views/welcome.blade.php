@@ -194,14 +194,6 @@
 
 
 
-            <!--<div class="content">
-                <div class="title m-b-md">
-                         LinkYou
-                   
-                </div>
-                <h5>Jobs Positions Just For Fou</h5>
-                
-                <div-->
   
               
 
