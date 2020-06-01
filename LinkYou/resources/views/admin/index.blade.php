@@ -27,21 +27,7 @@
       
        <!-- Tabla -->
     <div id="div6">
-    <table class="table table-hover" style="margin-top: 10px">
-        <thead class="thead-primary" style="background-color: #409EFF;color: white">
-          <tr >
-            <th scope="col">Compañia</th>
-            <th scope="col">Posicion</th>
-            <th scope="col">Ubicacion</th>
-            <th scope="col">Operaciones</th>
-           
-          </tr>
-        </thead>
-        <tbody id="tbodyadmin">
-          <tr id="tradmin"></tr> 
-        </tbody>
-      </table>
-
+      <carta v-for="user in users" v-bind:info="user" @click.native="borrar(user.id)"></carta>
     </div>
     <div style="text-align: center">
       <el-button  type="primary"  name="vermas"   id="vermas"  style="margin: auto; text-align: center">Mostrar Mas<i class="el-icon-view"></i></el-button> 
@@ -51,9 +37,9 @@
     
     </div>
     <script>
-    $( "#delete" ).click(function() {
-      location.reload();
-    });
+      $( "#delete" ).click(function() {
+        location.reload();
+      });
     </script>
 
 @endsection

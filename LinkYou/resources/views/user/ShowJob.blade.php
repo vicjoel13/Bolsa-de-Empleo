@@ -2,13 +2,11 @@
 @section('content')
 
   <!-- Div App relacionado con el archivo js -->
-  <div id="app_ShowJobs" >
+  <div id="app_ShowJobs" style="margin-top: 20px">
 
-    <ol>
-      <todo-item v-for="item in groceryList" v-bind:todo="item" ></todo-item>
-    </ol>
-    <div class="el-col el-col-8 el-col-offset-0"><div class="el-card is-always-shadow"><!----><div class="el-card__body" style="padding: 0px;"><img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image"> <div style="padding: 14px;"><span>Yummy hamburger</span> <div class="bottom clearfix"><time class="time"></time> <button type="button" class="el-button button el-button--text"><!----><!----><span>Operating</span></button></div></div></div></div></div>
-
+  
+    
+    
     <!-- Buscador-->
     <el-form>
       <el-form-item>
@@ -31,24 +29,15 @@
     </el-form>
 
     <!--Table-->
-    <div id="divTable">
-      <table class="table table-hover" style="margin-top: 10px">
-        <thead class="thead-primary" style="background-color: #409EFF;color: white">
-          <tr >
-            <th scope="col">Compañia</th>
-            <th scope="col">Posicion</th>
-            <th scope="col">Ubicacion</th>
-            <th scope="col">Accion</th>
-          </tr>
-        </thead>
-        <tbody id="tbody">
-          <tr id="tr" ></tr> 
-        </tbody>
-      </table>
-      <div style="text-align: center">
-        <el-button type="primary" icon="el-icon-view" style="margin: auto; text-align: center">Mostrar mas</el-button>        
-      </div>
+
+    <div style="margin:0 auto; text-align: center; margin-left: 100px">
+      <carta v-for="user in users" v-bind:info="user" url="Details/" ></carta>
     </div>
+    <div style="text-align: center">
+      <el-button type="primary" icon="el-icon-view" style="margin: auto; text-align: center; margin-bottom: 20px">Mostrar mas</el-button>        
+    </div>
+
+
  </div>
    
 @endsection
