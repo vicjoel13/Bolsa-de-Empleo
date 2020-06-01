@@ -11,7 +11,7 @@ var vm5 = new Vue({
       this.hola = $("input[name=turu]").val();
     },
     mounted() {
-    axios.get('api/Jobs/'+this.hola)
+    axios.get('/api/Jobs/'+this.hola)
     .then(response => {
             this.users = response.data.data;
             var table = document.getElementById('tbody');
@@ -25,5 +25,6 @@ var vm5 = new Vue({
     .catch(error => {
         console.log(error);
     });
-  }
+  },
+  
   });

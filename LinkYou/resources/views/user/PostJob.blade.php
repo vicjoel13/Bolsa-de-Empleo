@@ -59,7 +59,8 @@
                 </el-form-item>
 
                 <!-- Advertencia, no tocar -->
-                    <input v-model="ruleForm.company" name="company" id="company" value="{{Auth::user()->id }}" hidden>
+                    <input v-model="ruleForm.company" name="company" id="company" value="{{Auth::user()->name }}" hidden>
+                    <input v-model="ruleForm.id_company" name="id_company" id="id_company" value="{{Auth::user()->id }}" hidden>
                     <input v-model="ruleForm.logo" name="logo" id="logo" value="{{Auth::user()->logo }}" hidden>
                     <input v-model="ruleForm.email" name="email" id="email" value="{{Auth::user()->email }}" hidden>
             </el-form>
