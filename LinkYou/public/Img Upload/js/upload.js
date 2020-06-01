@@ -4,9 +4,9 @@ var feedback = function(res) {
         //document.querySelector('.status').classList.add('bg-success');
         
         document.getElementById('inputImg').innerHTML =
-        '<input type="text" name="foto" autocomplete="off" class="el-input__inner" value=\"' + get_link + '\" style="width: 100%;">'
+        '<input type="text" name="logo" autocomplete="off" class="el-input__inner" value=\"' + get_link + '\" style="width: 100%;display:none;">'
         document.getElementById('imagen').innerHTML =
-        '<img class="img"  src=\"' + get_link + '\"/>';
+        '<img class="img" name="logo" style="display:none;" src=\"' + get_link + '\"/>';
     }
 };
 

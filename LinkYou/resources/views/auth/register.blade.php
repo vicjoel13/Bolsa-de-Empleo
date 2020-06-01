@@ -67,8 +67,9 @@ body {
                             @enderror
                             </div>
                             </div>
+                            
                             <!-- If the user select a company type this div will show the additional information for the company-->
-                        <div name="company" id="company" style="display: none;">
+                        <div name="company" id="company" style="display: none">
                             <div class="form-group row">
                                 <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('address') }}</label>
                                 <div class="col-md-6">
@@ -81,12 +82,21 @@ body {
                                 </div>
                                 </div>
 
-                                <div class="form-group">
+                                <div class="form-group row">
                                     <label for="logo" class="col-md-4 col-form-label text-md-right">{{ __('logo') }}</label>
                                     <div class="col-md-6">
-                                        <div class="dropzone">
-                                            <div class="info" style="background-color: green; width: 200px; height: 200px"></div>
+                                        <div class="dropzone" >
+                                            <div class="info" style="background-color:width: 100px; height: 200px"></div>
                                         </div>
+                                    </div>
+                                        <el-col :span="11" style="display:none">
+                                            <div id="imagen"></div>
+                                        </el-col>
+                                        <el-form-item label="Imagen URL:" style="display: none">
+                                            <div id="inputImg">
+                            
+                                            
+                                        </el-form-item>
                                     @error('logo')
                                     <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
@@ -137,10 +147,10 @@ body {
      $(function () {
 
 $("#type").change(function () {
-    if ($(this).val() == "0") {
+    if ($(this).val() == "1") {
         $("#company").show();
     }
-    else if ($(this).val() == "1") {
+    else if ($(this).val() == "0") {
         $("#company").hide();
     }
 

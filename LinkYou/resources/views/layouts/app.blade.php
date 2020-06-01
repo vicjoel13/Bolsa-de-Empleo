@@ -57,8 +57,12 @@
     
 </head>
 <body>
+
+    <div id="app809">
+
     <div id="app">
         <nav  class="navbar navbar-expand-md navbar-light shadow-sm">
+
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}" style="color: #FFF">
                  LinkYou
@@ -107,11 +111,39 @@
                     </ul>
                 </div>
             </div>
+</div>
+</div>
         </nav>
+
         <main>
             @yield('content')
         </main>
     </div>
+    </div>
+<!-- JS, Popper.js, and jQuery -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.7.0/vue-resource.js"></script>
+<script src="https://unpkg.com/vuejs-paginate@latest"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+ 
+ 
+  <!-- Dependencias Necesarias-->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+ 
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="{{ asset('js/PostJob.js') }}"></script>
+  <!-- inport local JavaScript -->
+<script src="{{ asset('js/01.js') }}"></script>
+<script src="{{ asset('js/02.js') }}"></script>
+<script src="{{ asset('js/Admin.js') }}"></script>
+
+<!-- import ImgUr JavaScript -->
+<script type="text/javascript" src="{{ asset('Img Upload/js/imgur.js') }}"></script>
+<script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
+
+
     <!-- JS, Popper.js, and jQuery -->
     <script src="path/from/html/page/to/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -134,12 +166,22 @@
 <!-- Scripts For PostJob -->
 @elseif (\Request::is('Company/edit/*'))
     <script src="{{ asset('js/EditJob.js') }}"></script>
+<!-- Scripts For PostJob -->
+@elseif (\Request::is('Admin'))
+    <script src="{{ asset('js/AdminJobs.js') }}"></script>
     <!-- Scripts For PostJob -->
 @elseif (\Request::is('Admin'))
     <script src="{{ asset('js/AdminJobs.js') }}"></script>
+    @elseif(\Request::is('Company/*'))
+    <script src="{{ asset('js/ShowJobCompany.js') }}"></script>
 @else
+
 <!-- Scripts For PostJob -->
     <script src="{{ asset('js/JobDetails.js') }}"></script>
+    
+<!-- Scripts For CreateCategory -->
+    <script src="{{ asset('js/CreateCategory.js') }}"></script>
+
 @endif
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -151,4 +193,6 @@
     <script type="text/javascript" src="{{ asset('Img Upload/js/upload.js') }}"></script>
 
 </body>
+
+
 </html>

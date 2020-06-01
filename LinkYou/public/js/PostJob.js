@@ -16,7 +16,8 @@ var vm5 = new Vue({
               email: "",
               application: "",
               id_company: 25668,
-          }
+          },
+          categories:[]
         }
     },
     beforeMount(){
@@ -24,9 +25,15 @@ var vm5 = new Vue({
       this.ruleForm.logo = $("input[name=logo]").val();
       this.ruleForm.email = $("input[name=email]").val();
     },
+    mounted: function() {
+      axios.get("api/category").then((result) => {
+        this.categories = result.data.data;
+        console.log(this.categories);
+      });
+    },
     methods: {
       create (){
-        axios.post("http://127.0.0.1:8000/api/create/Job", this.ruleForm).then((result) => {
+        axios.post("api/create/Job", this.ruleForm).then((result) => {
         console.log(result);
         }); 
       },

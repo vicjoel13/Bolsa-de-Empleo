@@ -6,13 +6,13 @@
       <th>tiempo</th>
       <th>posicion</th>
     </tr>
-    @foreach ($jobs as $job)
+    
     <tr>
-      <td>{{$job->position}}</td>
-      <td>{{$job->time_type}}</td>
-      <td>{{$job->position}}</td>
+      <td>{{$id}}</td>
+      <td>{{$id}}</td>
+      <td>{{$id}}</td>
     </tr>
-    @endforeach
+    
   </table>
 </div>
 

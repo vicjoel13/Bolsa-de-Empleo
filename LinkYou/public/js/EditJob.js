@@ -24,7 +24,7 @@ var vm5 = new Vue({
       this.id = $("input[name=idEdit]").val();
     },
     mounted() {
-      axios.get('http://127.0.0.1:8000/api/Job/'+this.id)
+      axios.get('api/Job/'+this.id)
       .then(response => {
           this.ruleForm = response.data.data;
           console.log(this.ruleForm)
@@ -35,7 +35,7 @@ var vm5 = new Vue({
     },
     methods: {
       update (){
-        axios.put("http://127.0.0.1:8000/api/update/Job", this.ruleForm).then((result) => {
+        axios.put("api/update/Job", this.ruleForm).then((result) => {
           console.log(result);
         });
       }

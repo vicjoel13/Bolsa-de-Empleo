@@ -18,7 +18,7 @@
           <el-button type="primary" icon="el-icon-search"></el-button>
         </el-col>
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
-          <a href="/Company/post"> <el-button type="primary" icon="el-icon-edit">Crear empleo</el-button> </a>       
+          <a href="/Admin/create"> <el-button type="primary" icon="el-icon-edit">Crear Categoria</el-button> </a>       
        </el-col>
       </el-form-item>
     </el-form>
@@ -27,7 +27,7 @@
       
        <!-- Tabla -->
     <div id="div6">
-      <carta v-for="user in users" v-bind:info="user" @click.native="borrar(user.id)"></carta>
+      <carta v-for="user in filteredList" v-bind:info="user" @click.native="borrar(user.id)"></carta>
     </div>
     <div style="text-align: center">
       <el-button  type="primary"  name="vermas"   id="vermas"  style="margin: auto; text-align: center">Mostrar Mas<i class="el-icon-view"></i></el-button> 

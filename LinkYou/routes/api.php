@@ -19,6 +19,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 //show all jobs
 Route::get('Jobs', "PostController@index");
+//show all jobs2
+Route::get('Jobs2', "PostController@index2");
 //show all jobs of the company
 Route::get('Jobs/{id}', "PostController@indexCompany");
 //list one Job
@@ -37,5 +39,8 @@ Route::delete('category/{id}','job_categoryController@destroy');
 Route::post('create/category','job_categoryController@store');
 //Update/Edit category
 Route::put('create/category','job_categoryController@store');
-//list one category
+//list one category of job
 Route::get('category/{id}','job_categoryController@show');
+//list Job of a specific Category
+Route::get('Jobs/category/{category}','PostController@showCategory');
+
