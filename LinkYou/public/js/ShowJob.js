@@ -26,7 +26,7 @@ Vue.component('paginate', VuejsPaginate)
 var app = new Vue({
     el: "#app_ShowJobs",
     data: {
-       	
+       	selected: '',
         users: [],
         buscador: '',
         categories: [],
@@ -42,6 +42,7 @@ var app = new Vue({
 
     computed: {
         filteredList() {
+
         const value= this.buscador.charAt(0).toLowerCase() + this.buscador.slice(1);
         return this.users.filter(function(user){
             return user.company.toLowerCase().indexOf(value) > -1 ||
@@ -53,6 +54,9 @@ var app = new Vue({
         
         
     },
+         
+
+
    
     mounted: function() {
         axios.get('api/Jobs')
@@ -64,7 +68,7 @@ var app = new Vue({
         .catch(error => {
             console.log(error);
         });
-        axios.get("api/category").then((result) => {
+        axios.get("api/category/").then((result) => {
             this.categories = result.data.data;
          
         
@@ -91,6 +95,12 @@ var app = new Vue({
                     this.users = response.data.data
                 });
         },
+        onChange(){
+            axios.get('/api/Jobs/category/'+this.selected)
+            .then(response => {
+                this.users = response.data.data
+            });
+},
         makePagination(data){
             let meta = {
                 current_page: data.meta.current_page,
