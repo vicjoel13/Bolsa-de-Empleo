@@ -2,21 +2,33 @@ var vm5 = new Vue({
     el: "#app_postCategory",
     data() {
         return {
-            ruleForm: {
-                category: [],
-                pagination: 10
-
+          category: '',
+          pagination: 10,
+          pagSelected: {
+            pagination: 0
           },
-          paginationNumber: [5,10,15,20,25,30]
+          paginationNumber:[5,10,15,20,25,30],
+          categoryCreated:{
+            category:''
+          }
         }
+        
     },
     methods: {
       create (){
-        axios.post("api/create/category", this.ruleForm).then((result) => {
+        this.categoryCreated.category = this.category;
+        axios.post("/api/create/category", this.categoryCreated).then((result) => {
         console.log(result);
-
         }); 
-        this.ruleForm.category = "";
+       
+        this.category = "";
       },
+      editPagination(){
+        this.pagSelected.pagination = this.pagination;
+        axios.put("/api/Admin", this.pagSelected).then((result) => {
+          console.log(result);
+          }); 
+      console.log(this.pagSelected)
+      }
     }
 });

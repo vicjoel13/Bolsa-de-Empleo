@@ -45,4 +45,7 @@ Route::get('category/{id}','job_categoryController@show');
 Route::get('Jobs/category/{category}','PostController@showCategory');
 //search by category on fieldset
 Route::get('search/Jobs/{field}/{query}','PostController@search');
-
+//get data from admin
+Route::get('admin','AdminConf@index');
+//update pagination
+Route::put('Admin','AdminConf@store');

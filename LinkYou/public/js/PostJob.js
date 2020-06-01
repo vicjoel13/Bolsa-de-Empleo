@@ -5,7 +5,7 @@ var vm5 = new Vue({
             ruleForm: {
               created_at: "",
               updated_at: "",
-              company: "123",
+              company: "",
               time_type: "",
               logo: "",
               URL: "",
@@ -15,7 +15,7 @@ var vm5 = new Vue({
               description: "",
               email: "",
               application: "",
-              id_company: 25668,
+              id_company: "",
           },
           categories:[]
         }
@@ -24,16 +24,17 @@ var vm5 = new Vue({
       this.ruleForm.company = $("input[name=company]").val();
       this.ruleForm.logo = $("input[name=logo]").val();
       this.ruleForm.email = $("input[name=email]").val();
+      this.ruleForm.id_company = $("input[name=id_company]").val();
     },
     mounted: function() {
-      axios.get("api/category").then((result) => {
+      axios.get("/api/category").then((result) => {
         this.categories = result.data.data;
         console.log(this.categories);
       });
     },
     methods: {
       create (){
-        axios.post("api/create/Job", this.ruleForm).then((result) => {
+        axios.post("/api/create/Job", this.ruleForm).then((result) => {
         console.log(result);
         }); 
       },

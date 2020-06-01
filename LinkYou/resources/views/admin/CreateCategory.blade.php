@@ -6,24 +6,20 @@
     <hr>
     <div class="principal">
         <div id="app_postCategory">
-            <el-form :model="ruleForm" ref="ruleForm" method="POST" label-width="120px" class="demo-ruleForm">
                 <!-- inputs Informacion -->
                     <el-col :span="12">
-                        <el-input type="text" v-model="ruleForm.category" placeholder="Categoria"></el-ipunt>
+                        <el-input type="text" v-model="category" placeholder="Categoria"></el-ipunt>
                     </el-col>
                     <el-col :span="12">
-                        <el-select v-model="ruleForm.pagination" placeholder="Numero de paginacion">
-                        <el-option v-for="number of paginationNumber" v-bind:value="number">@{{number}}</el-option>
+                        <el-select v-model="pagination" placeholder="Numero de paginacion">
+                        <el-option v-for="number in paginationNumber"  v-bind:label="number"  v-bind:value="number"></el-option>
                         </el-select>
                     </el-col>
-                </el-form-item>
                 <br>
                 <!-- Botones -->
-                <el-form-item>
                     <el-button type="success" v-on:click="create()">Crear</el-button>
+                    <el-button type="success" v-on:click="editPagination()">Editar Paginacion</el-button>
                     <el-button v-on:click="">Limpiar</el-button>
-                </el-form-item>
-            </el-form>
         </div>
     </div>
 </div>

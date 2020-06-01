@@ -27,6 +27,6 @@ class AdminConf extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('AdminConf');
     }
 }
