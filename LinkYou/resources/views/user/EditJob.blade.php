@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+@if(Auth::user()->type==1)
 <div class="all">
     <h3> Editar empleo</h3>
     <hr>
@@ -76,5 +76,6 @@
         </div>
     </div>
 </div>
-
+@else
+<h3>No tienes Accesso {{Auth::user()->name}}</h3>
 @endsection

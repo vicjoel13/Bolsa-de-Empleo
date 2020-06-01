@@ -13,7 +13,7 @@ class AdminConf extends Migration
      */
     public function up()
     {
-        Schema::create('AdminConf', function (Blueprint $table) {
+        Schema::create('admin_confs', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->integer('pagination');
@@ -27,6 +27,6 @@ class AdminConf extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('AdminConf');
+        Schema::dropIfExists('admin_confs');
     }
 }

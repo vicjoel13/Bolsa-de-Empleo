@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+@if(Auth::user()->type==2)
 <!-- Div App relacionado con el archivo js -->
 <div id="app_AdminJobs">
     <div id="componente1">
@@ -41,5 +41,8 @@
         location.reload();
       });
     </script>
+@else
+<h3>QUE HACES AQUI {{Auth::user()->name}}</h3>
+@endif
 
 @endsection

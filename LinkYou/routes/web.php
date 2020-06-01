@@ -25,6 +25,6 @@ Route::get('/Company/post','PostController@PostJob')->middleware('auth');
 Route::get('/Company/edit/{id}','PostController@EditJob')->middleware('auth');
 Route::get('/Company/{id}','user@IndexC')->middleware('auth');
 Route::get('/Details/{id}','user@seeJob')->middleware('auth');
-Route::get('/Admin','user@AdminIndex')->middleware('auth');
 Route::get('/moreJobs','user@viewMore')->middleware('auth');
+Route::get('/Admin','user@AdminIndex')->middleware('auth');
 Route::get('/Admin/create','PostController@CreateCategory')->middleware('auth');
