@@ -43,7 +43,10 @@ var app = new Vue({
     computed: {
         filteredList() {
           return this.users.filter(user => {
-            return user.company.toLowerCase().includes(this.buscador.toLowerCase())
+              
+            return user.company.toLowerCase().includes(this.buscador.toLowerCase()) || 
+            user.position.toLowerCase().includes(this.buscador.toLowerCase()) ||
+            user.location.toLowerCase().includes(this.buscador.toLowerCase())
         })
         }
     },
