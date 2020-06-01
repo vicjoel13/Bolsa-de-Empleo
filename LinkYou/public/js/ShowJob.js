@@ -18,7 +18,7 @@ Vue.component('carta' ,{
         info: {},
         url: ''
     },
-    template: '<div style="display: block; "><div style="margin-left: 10px;margin-bottom: 10px" class="el-col el-col-4 el-col-offset-0"><div class="el-card is-always-shadow"><!----><div class="el-card__body" style="padding: 0px;"><img style="min-width: 235px; min-height: 235px;" src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image"> <div style="padding: 14px;"><span><strong>{{info.company}}</strong></span><br> <span>{{info.time_type}}</span> <div class="bottom clearfix"><time class="time"></time><a v-bind:href="url + info.id"><button type="button" class="el-button button el-button--text"><!----><!----><span>Mostrar</span></button></a></div></div></div></div></div></div>'
+    template: '<div style="display: block; "><div style="margin-left: 10px;margin-bottom: 10px" class="el-col el-col-4 el-col-offset-0"><div class="el-card is-always-shadow"><!----><div class="el-card__body" style="padding: 0px;"><img style="min-width: 235px; min-height: 235px;" src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image"> <div style="padding: 14px;"><span><strong>{{info.company}}</strong></span><br> <span>{{info.position}}</span><br> <span>{{info.location}}</span> <div class="bottom clearfix"><time class="time"></time><a v-bind:href="url + info.id"><button type="button" class="el-button button el-button--text"><!----><!----><span>Mostrar</span></button></a></div></div></div></div></div></div>'
 });
 
 Vue.component('paginate', VuejsPaginate)
@@ -42,10 +42,16 @@ var app = new Vue({
 
     computed: {
         filteredList() {
-          return this.users.filter(user => {
-            return user.company.toLowerCase().includes(this.buscador.toLowerCase())
-        })
-        }
+        const value= this.buscador.charAt(0).toLowerCase() + this.buscador.slice(1);
+        return this.users.filter(function(user){
+            return user.company.toLowerCase().indexOf(value) > -1 ||
+                   user.position.toLowerCase().indexOf(value) > -1 ||
+                   user.location.toLowerCase().indexOf(value) > -1
+                })
+        
+        },
+        
+        
     },
    
     mounted: function() {
