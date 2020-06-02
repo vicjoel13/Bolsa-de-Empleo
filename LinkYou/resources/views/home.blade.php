@@ -14,8 +14,8 @@
                         </div>
                     @endif
 
-                    <h3>{{Auth::user()->id }}</h3>
-                    You are logged in!
+                    <h3>{{Auth::user()->name }}</h3>
+                    Bienvenido a LinkYou!
                 </div>
               
             </div>

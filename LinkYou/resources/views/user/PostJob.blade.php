@@ -69,6 +69,10 @@
     </div>
 </div>
 @else
-<h3>No tienes acceso {{Auth::user()->name}}</h3>
+
+<div style="margin:auto; text-align:center; margin-top:20px ">
+<img src="https://image.flaticon.com/icons/png/512/61/61457.png">
+
+</div>
 @endif
 @endsection
