@@ -1,0 +1,51 @@
+https://images.unsplash.com/photo-1551135049-8a33b5883817?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60
+
+<stdio.h>entrada saida
+<stdlib.h>
+
+Varibles guardar datos en la meemoria
+short guerdar cortos
+int enteros, entre el medio de short y long
+long largo
+float decimal.
+double decimal con mas precision
+char caracter 1
+scanf is like cin
+operadores logico comparar
+operador matematicos
+operadores logicos && ||
+swicht no usa operadores logicos casos concretos
+fflush
+
+<div class="centrado">
+                       <h1>  <strong>    &nbsp; &nbsp; &nbsp; &nbsp; LinkYou</strong></h1>
+                        <h4>Jobs Positions Right Here!</h4>
+                    </div>
+
+
+<div class="centrado">
+                       <h1>  <strong> &nbsp;Un mundo de Oportunidades</strong></h1>
+                        <h4><strong>El espacio mas amplio de alternativas y nuevas experiencias , empresas buscando talentos justo como tu para elevar sus negocios.<strong></h4>
+                    </div>
+
+
+ <div class="centrado">
+                       <h1>  <strong> &nbsp;Variedad</strong></h1>
+                        <h4>Numerosas vacantes disponibles en diferentes areas es tiempo de desarrollar tus habilidades y alcanzar tus metas.</h4>
+                       <br>
+                        <h5><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Es el momento de  unirte a la red mas grande del empleos!"</i></h5>
+                    </div>
+
+
+
+ <h3>Comentarios </h3>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Lorena Vasquez Tanta diversidad aumenta tus probabilidades.</p>
+      <img src="birds1.jpg" alt="Image">
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="col-sm-4">
+      <p>Juan Perez "El mejor sitio web donde encontrar personal altamente calificado.">
+      <img src="birds2.jpg" alt="Image">
+    </div>
