@@ -4,9 +4,12 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use Illuminate\Http\Request;
 use App\create_post_table;
+use App\AdminConf;
+use DB;
 use App\Http\Resources\Post as Post;
 class PostController extends Controller
 {
+    
     public function showAll()
     {
         $post = create_post_table::all()->toJson();
@@ -52,11 +55,14 @@ class PostController extends Controller
     public function index()
     {
         //get jobs
+       
+        $pagination = DB::select('select * from admin_confs where id=1') ;
+        foreach($pagination as $value){
         $jobs=create_post_table::orderBy('created_at', 'ASC')->
         where('isActive','1')->
-        paginate(10);
+        paginate($value->pagination);
 
-        return Post::collection($jobs);
+        return Post::collection($jobs);}
     }
     public function index2()
     {
@@ -71,7 +77,7 @@ class PostController extends Controller
     public function indexCompany($id)
     {
         //get jobs of the company
-        $jobs=create_post_table::orderBy('created_at', 'ASC')->where('id_company','$id')->paginate(10);
+        $jobs=create_post_table::orderBy('created_at', 'ASC')->where('id_company',$id)->paginate(10);
         return Post::collection($jobs);
     }
     public function show($id)
@@ -82,7 +88,13 @@ class PostController extends Controller
        //return SINGLE Job RESOURCE
        return new Post($jobs);
     }
-    public function showCategory($category)
+    public function search($field,$query)
+    {
+        $jobs=create_post_table::orderBy('created_at', 'ASC')->where($field,'LIKE',"%$query%")->paginate(10);
+
+        return Post::collection($jobs);
+    }
+    public function showCategory($category) 
     {
        //get Job by category
        $jobs=create_post_table::orderBy('created_at', 'ASC')->where(['job_category'=>$category ,'isActive'=>'1'])->paginate(20);
