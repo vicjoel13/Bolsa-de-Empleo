@@ -6,14 +6,15 @@
     
   <div id="app_ShowJobs" style="margin-top: 20px">
   
-  
+  <h3>Empleos Disponibles</h3>
+  <hr>
     
     <!-- Buscador-->
   
     <el-form>
  
       <el-form-item>
-        <el-col :span="10" style="margin-left: 3%">
+        <el-col :span="10" style="margin-left: 8%">
           <el-input type="text"  v-on:input="searchData()" placeholder="Buscar un trabajo" prefix-icon="el-icon-search"   v-model="buscador" ></el-input> 
         </el-col>
 
@@ -28,7 +29,7 @@
         </el-col>
 
         <el-col :span="5">
-          <el-select v-model="selected" placeholder="Seleccionar categoria" style="width: 50%;" style="margin-left: 2%" @change="onChange">                            
+          <el-select v-model="selected" placeholder="Seleccionar categoria" style="width: 80%; right:10%;" style="margin-left: 2%" @change="onChange">                            
               <el-option v-for="cat in categories" v-bind:label="cat.category" v-bind:value="cat.category"> @{{cat.category }}</el-option>
           </el-select>
         </el-col>

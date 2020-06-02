@@ -9,7 +9,7 @@
       <!-- Componente que es donde esta el Nav-->
     </div> 
      <!-- Buscador-->
-  <input v-model="hola" name="turu" id="turu" value="{{$id}}" hidden>
+  <input v-model="hola" name="turu" id="turu" value="{{$id}}" hidden><br>
     <h3>Trabajos Posteados</h3>
     <hr>
         <el-form>
