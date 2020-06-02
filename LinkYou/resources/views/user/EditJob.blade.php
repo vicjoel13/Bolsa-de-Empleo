@@ -5,18 +5,15 @@
     <h3> Editar empleo</h3>
     <hr>
     <div class="principal">
-        <div id="app_post">
+        <div id="app_Editpost">
             <el-form :model="ruleForm" ref="ruleForm" method="POST" label-width="120px" class="demo-ruleForm">
-
                 <input v-model="ruleForm.id" name="idEdit" id="idEdit" value="{{$id}}" hidden>
 
                 <!-- inputs Informacion -->
                 <el-form-item label="Categoria:" required>
                     <el-col :span="11">
-                        <el-select v-model="ruleForm.job_category" filterable placeholder="Seleccionar categoria" style="width: 100%;">                            
-                            <el-option label="Opcion 1" value="opt1"></el-option>
-                            <el-option label="Opcion 2" value="opt2"></el-option>
-                            <el-option label="Opcion 3" value="opt3"></el-option>
+        <el-select v-model="ruleForm.job_category" placeholder="Seleccionar categoria" style="width: 100%;">                            
+         <el-option v-for="cat in categories" v-bind:label="cat.category" v-bind:value="cat.category"></el-option>
                         </el-select>
                     </el-col>
                 </el-form-item>
@@ -37,9 +34,7 @@
                     <el-input type="text" v-model="ruleForm.URL" placeholder="URL"></el-ipunt>
                 </el-form-item>
 
-                <?php echo '<el-form-item label="URL">
-                    <el-input type="text" v-model="ruleForm.URL" placeholder="URL"></el-ipunt>
-                </el-form-item>' ?>
+         
 
                 <!-- inputs Informacion -->
                 <el-form-item label="Informacion" required>

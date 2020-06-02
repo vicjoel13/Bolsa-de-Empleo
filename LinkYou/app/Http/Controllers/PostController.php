@@ -7,6 +7,8 @@ use App\create_post_table;
 use App\AdminConf;
 use DB;
 use App\Http\Resources\Post as Post;
+use Illuminate\Support\Facades\DB as FacadesDB;
+
 class PostController extends Controller
 {
     
@@ -56,7 +58,8 @@ class PostController extends Controller
     {
         //get jobs
        
-        $pagination = DB::select('select * from admin_confs where id=1') ;
+       $pagination = DB::select('select * from admin_confs where id=1') ;
+
         foreach($pagination as $value){
         $jobs=create_post_table::orderBy('created_at', 'ASC')->
         where('isActive','1')->

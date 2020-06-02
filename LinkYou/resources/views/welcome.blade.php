@@ -144,8 +144,8 @@
               
                 <!-- The slideshow -->
                 <div class="carousel-inner">
-                  <div class="carousel-item active" style="width: 100%">
-                    <img class="d-block w-100"  style="width: 100%"   src="https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Presentacion" >
+                  <div class="carousel-item active"  width="1366" height="657" >
+                    <img   class="d-block w-1000"   width="1366"  height="657"  src="https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&h=1080&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Presentacion">
                     <div class="carousel-caption d-none d-md-block">
                       <big><h1><br><br><br><strong> &nbsp; LinkYou!</strong></h1></big>
                        <p> <h4>Jobs Positions Right Here</h4></p>
@@ -164,12 +164,13 @@
                     <h1  style="color: black;" >  <strong> &nbsp;Variedad</strong></h1>
                         <h4>Numerosas vacantes disponibles en diferentes areas, es tiempo de desarrollar tus habilidades y alcanzar tus metas.</h4>
                         <br>
-                        <P   style="color: purple;" ALIGN="right"> <q>Tanta diversidad aumenta tus probabilidades...Lorena Vasquez</q></p>
+                        <P   style="color: purple;" ALIGN="right"> <q>Tanta diversidad aumenta tus probabilidades...<strong>Lorena Vasquez</strong></q></p>
                         <P  style="color: purple;" ALIGN="left"><q>El mejor sitio web donde encontrar personal altamente calificado...<strong>Juan Perez</strong></q></p>           
                          <br>
                         <h5  style="color: black;"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Es el momento de  unirte a la red mas grande del empleos!"</i></h5>
                     </div>
                 </div>
+               
                   <div class="carousel-item">
                     <img class="d-block w-10000 " align="left" width="1366" height="657"  src="https://images.unsplash.com/photo-1502945015378-0e284ca1a5be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Candidatos">
                     <div class="texto-encima" align="left">
@@ -189,30 +190,7 @@
                 </a>
               
               </div>
-    
 
-
-
-            <!--<div class="content">
-                <div class="title m-b-md">
-                         LinkYou
-                   
-                </div>
-                <h5>Jobs Positions Just For Fou</h5>
-                
-                <div-->
-  
-              
-
-              
-            
-      
-    
-    
-
-
-            
-    
     
         </body>
 </html>
