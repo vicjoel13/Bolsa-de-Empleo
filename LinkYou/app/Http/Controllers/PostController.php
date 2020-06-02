@@ -58,14 +58,14 @@ class PostController extends Controller
     {
         //get jobs
        
-       /* $pagination = DB::select('select * from admin_confs where id=1') ;
+       $pagination = DB::select('select * from admin_confs where id=1') ;
 
         foreach($pagination as $value){
         $jobs=create_post_table::orderBy('created_at', 'ASC')->
         where('isActive','1')->
         paginate($value->pagination);
 
-        return Post::collection($jobs);}*/
+        return Post::collection($jobs);}
     }
     public function index2()
     {

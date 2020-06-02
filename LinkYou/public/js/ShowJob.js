@@ -37,14 +37,9 @@ var app = new Vue({
     },
 
 
-    computed: {
-      hola(){
-          this.searchData;
-      }
-    },
    
     mounted: function() {
-        axios.get('/api/Jobs')
+        axios.get('api/Jobs')
         .then(response => {
             this.users = response.data.data;
            
@@ -53,7 +48,7 @@ var app = new Vue({
         .catch(error => {
             console.log(error);
         });
-        axios.get("/api/category/").then((result) => {
+        axios.get("api/category/").then((result) => {
             this.categories = result.data.data;
          
         
@@ -67,10 +62,6 @@ var app = new Vue({
 
     methods: {
         
-        hola (id){
-            window.open("Details/"+id, '_self');
-        
-        },
         refresh(){
         location.reload()
         },

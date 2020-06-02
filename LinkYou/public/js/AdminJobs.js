@@ -3,32 +3,37 @@ Vue.component('carta' ,{
       info: {},
       url: '',
   },
-  template: '<div style="display: block; "><div style="margin-left: 10px;margin-bottom: 10px" class="el-col el-col-4 el-col-offset-0"><div class="el-card is-always-shadow"><!----><div class="el-card__body" style="padding: 0px;"><img style="min-width: 235px; min-height: 235px;" src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image"> <div style="padding: 14px;"><span><strong>{{info.company}}</strong></span><br> <span>{{info.time_type}}</span> <div class="bottom clearfix"><time class="time"></time><a><button type="button" @click="borrar(url)" class="el-button button el-button--text"><!----><!----><span>Eliminar</span></button></a></div></div></div></div></div></div>'
-})
+  template: '<div style="display: block; "><div style="margin-left: 10px;margin-bottom: 10px" class="el-col el-col-4 el-col-offset-0"><div class="el-card is-always-shadow"><!----><div class="el-card__body" style="padding: 0px;"><img style="min-width: 235px; min-height: 235px;" src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image"> <div style="padding: 14px;"><span><strong>{{info.company}}</strong></span><br> <span>{{info.position}}</span><span>{{info.position}}</span> <div class="bottom clearfix"><time class="time"></time><a><button type="button" @click="borrar(url)" class="el-button button el-button--text"><!----><!----><span>Eliminar</span></button></a></div></div></div></div></div></div>'
+});
 
 var app = new Vue({
   el: "#app_AdminJobs",
   data: {
+    selected: '',
+    selectedField:'company',
       users: [],
-      buscador: ''
+      buscador: '',
+      meta: {},
+        links: {},
+        categories: [],
   },
-  computed: {
-    filteredList() {
-      return this.users.filter(user => {
-        return user.company.toLowerCase().includes(this.buscador.toLowerCase())
-    })
-    }
-},
+ 
   mounted: function() {
-      axios.get('api/Jobs')
-          .then(response => {
-              this.users = response.data.data;
-              table = document.getElementById('tbodyadmin');
-              var tableContent = document.getElementById('tradmin');
-          })
-          .catch(error => {
-              console.log(error);
-          });
+    axios.get('api/Jobs')
+    .then(response => {
+        this.users = response.data.data;
+       
+        
+    })
+    .catch(error => {
+        console.log(error);
+    });
+    axios.get("api/category/").then((result) => {
+        this.categories = result.data.data;
+     
+    
+    });
+    this.fetchStories()
   },
   methods:{
       
@@ -40,7 +45,63 @@ var app = new Vue({
 
         });
            
-          }
+          }, refresh(){
+            location.reload()
+            },
+            searchData() {
+                url = "/api/search/Jobs/"+this.selectedField +"/"+
+                this.buscador +
+                  "?page=1";
+                if(this.buscador == ''){
+                    this.fetchStories();
+                }else{
+                    axios
+                    .get(url)
+                    .then(response => {
+                      this.users = response.data.data;
+                      this.makePagination(response.data);
+                     
+                    })
+                    .catch(e => {
+                      console.log(e);
+                    });
+                    this.fetchStories(url)
+                }
+                
+               
+              },
+            fetchStories(page_url) {
+                url = page_url || 'api/Jobs'
+                axios.get(url)
+                    .then( response => {
+                        console.log(response.data.links)
+                        this.makePagination(response.data)
+                        this.users = response.data.data
+                    });
+            },
+            onChange(){
+                axios.get('/api/Jobs/category/'+this.selected)
+                .then(response => {
+                    this.users = response.data.data
+                });
+    },
+            makePagination(data){
+                let meta = {
+                    current_page: data.meta.current_page,
+                    last_page: data.meta.last_page,
+                    
+                    
+                }
+                let links ={
+                    next: data.links.next,
+                    prev: data.links.prev
+                }
+     
+    
+                this.meta = meta
+                this.links = links
+    
+            }
           
           
   }

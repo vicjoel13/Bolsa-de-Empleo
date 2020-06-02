@@ -1,30 +1,33 @@
 var vm5 = new Vue({
-    el: "#app_post",
+    el: "#app_Editpost",
     data() {
         return {
-          id: "",
+             id: "",
             ruleForm: {
+              id:'',
               created_at: "",
               updated_at: "",
               company: "",
               logo: "",
               URL: "",
-              time_type: "Full time",
+              time_type: "",
               position: "",
               location: "",
               job_category: "",
               description: "",
               email: "",
               application: "",
-              id_company: 25668,
-          }
+              id_company: '',
+              
+          },
+          categories:[]
         }
     },
     beforeMount(){
       this.id = $("input[name=idEdit]").val();
     },
     mounted() {
-      axios.get('api/Job/'+this.id)
+      axios.get('/api/Job/'+this.id)
       .then(response => {
           this.ruleForm = response.data.data;
           console.log(this.ruleForm)
@@ -32,11 +35,14 @@ var vm5 = new Vue({
       .catch(error => {
           console.log(error);
       });
+
+      axios.get("/api/category").then((result) => {
+        this.categories = result.data.data;
+      });
     },
     methods: {
       update (){
-        axios.put("api/update/Job", this.ruleForm).then((result) => {
-          console.log(result);
+        axios.put("/api/update/Job", this.ruleForm).then((result) => {
         });
       }
     }
