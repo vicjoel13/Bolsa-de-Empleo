@@ -31,7 +31,7 @@
           </el-select>
         </el-col>
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
-          <a href="/Admin/create"> <el-button type="primary" icon="el-icon-edit">Crear Categoria</el-button> </a>       
+          <a href="/Admin/create"> <el-button type="primary" icon="el-icon-s-tools">Configuraciones</el-button> </a>       
        </el-col>
       </el-form-item>
     </el-form>
@@ -39,13 +39,13 @@
         
       
        <!-- Tabla -->
-       <div class="row">
+       <div class="row" style="width:100%">
 
     <div id="div6" class="col">
       <carta v-for="user in users" v-bind:info="user" @click.native="borrar(user.id)"></carta>
     </div>
     </div>
-    <div class="row">
+    <div class="row" style="width:100%">
       <div class="col" style="text-align: center; margin:10px;">
       <el-button class="btn btn-default" @click="fetchStories(links.prev)"
             :disabled="!links.prev">

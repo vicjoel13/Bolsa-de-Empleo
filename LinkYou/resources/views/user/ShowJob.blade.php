@@ -45,13 +45,14 @@
     </el-form>
 
     <!--Table-->
-  <div class="row">
-  <div class="col" style="margin:0 auto; text-align: center; margin-left: 100px">
+    <div class="row" style="width:100%">
+    <div class="col" style="margin:0 auto; text-align: center; margin-left: 80px">
       <carta v-for="user in users" v-bind:info="user" url="Details/" ></carta>
     </div>
-  </div>
-    <div class="row">
-      <div class="col" style="text-align: center; margin:10px;">
+    
+    </div>
+    <div class="row" style="width:100%">
+     <div class="col" style="text-align: center;">
       <el-button class="btn btn-default" @click="fetchStories(links.prev)"
             :disabled="!links.prev">
         Previous

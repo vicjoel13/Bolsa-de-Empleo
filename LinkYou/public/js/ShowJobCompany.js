@@ -25,7 +25,7 @@ Vue.component('filas' ,{
   <img style="min-width: 40%; min-height: 30%;" :src="info.logo" class="image">
    <div style="padding: 14px;"><span><strong>{{info.company}}</strong></span><br><span>{{info.position}}</span><br> <span>{{info.location}}</span> <div class="bottom clearfix"><time class="time"></time>
    <a v-bind:href="url + info.id"><button type='button' class='el-button el-button--primary btn-sm '><i class="el-icon-edit"></i></button></a>
-  <button type='button' class='el-button el-button--danger btn-sm' v-on:click="borrar(info.id)"> <i class="el-icon-delete"></i></button></div></div></div></div></div></div>
+  <button type='button' class='el-button el-button--danger btn-sm ' v-on:click="borrar(info.id)"> <i class="el-icon-delete"></i></button></div></div></div></div></div></div>
   
   
   
