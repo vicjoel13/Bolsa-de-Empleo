@@ -44,7 +44,7 @@ var app = new Vue({
     },
    
     mounted: function() {
-        axios.get('api/Jobs')
+        axios.get('/api/Jobs')
         .then(response => {
             this.users = response.data.data;
            
@@ -53,7 +53,7 @@ var app = new Vue({
         .catch(error => {
             console.log(error);
         });
-        axios.get("api/category/").then((result) => {
+        axios.get("/api/category/").then((result) => {
             this.categories = result.data.data;
          
         
