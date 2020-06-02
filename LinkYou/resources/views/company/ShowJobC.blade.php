@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+@if(Auth::user()->type==1)
 <!-- Div App relacionado con el archivo js -->
 <div id="app_ShowJobsC">
   
@@ -42,6 +42,10 @@
     
     </div>
    
-   
+    <script>
 
+
+    </script>
+@else
+  <h3>No tienes Acceso {{Auth::user()->name}}</h3>
 @endsection

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+@if(Auth::user()->type==2)
 <!-- Div App relacionado con el archivo js -->
 <div id="app_AdminJobs">
   <h2>Administrador</h2>

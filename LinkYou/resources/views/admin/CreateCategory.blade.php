@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-
+@if(Auth::user()->type==2)
 <div class="all">
     <h3> Crear Categoria</h3>
     <hr>
@@ -23,7 +23,8 @@
         </div>
     </div>
 </div>
-
-
+@else
+<h3>QUE HACES AQUI {{Auth::user()->name}}</h3>
+@endif
 
 @endsection

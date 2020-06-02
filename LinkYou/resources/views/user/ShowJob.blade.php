@@ -2,7 +2,7 @@
 @section('content')
 
   <!-- Div App relacionado con el archivo js -->
-  
+
     
   <div id="app_ShowJobs" style="margin-top: 20px">
   
@@ -69,4 +69,6 @@
  
  
 </div>
+
+
 @endsection
