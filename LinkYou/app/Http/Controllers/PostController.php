@@ -70,7 +70,7 @@ class PostController extends Controller
     public function index2()
     {
         //get jobs
-        $jobs=create_post_table::orderBy('created_at', 'DESC')->
+        $jobs=create_post_table::orderBy('created_at','DESC')->
         where('isActive','1')->
         get();
 
@@ -80,7 +80,7 @@ class PostController extends Controller
     public function indexCompany($id)
     {
         //get jobs of the company
-        $jobs=create_post_table::orderBy('created_at', 'DESC')->where('id_company',$id)->paginate(10);
+        $jobs=create_post_table::orderBy('created_at','DESC')->where('id_company',$id)->paginate(10);
         return Post::collection($jobs);
     }
     public function show($id)
