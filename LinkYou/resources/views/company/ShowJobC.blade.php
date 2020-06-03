@@ -49,6 +49,6 @@
 @else
 <div style="margin:auto; text-align:center; margin-top:20px ">
 <img src="https://image.flaticon.com/icons/png/512/61/61457.png">
-
+@endif
 </div>
 @endsection

@@ -61,7 +61,7 @@ class PostController extends Controller
        $pagination = DB::select('select * from admin_confs where id=1') ;
 
         foreach($pagination as $value){
-        $jobs=create_post_table::orderBy('created_at', 'ASC')->
+        $jobs=create_post_table::orderBy('created_at', 'DESC')->
         where('isActive','1')->
         paginate($value->pagination);
 
@@ -70,7 +70,7 @@ class PostController extends Controller
     public function index2()
     {
         //get jobs
-        $jobs=create_post_table::orderBy('created_at', 'ASC')->
+        $jobs=create_post_table::orderBy('created_at', 'DESC')->
         where('isActive','1')->
         get();
 
@@ -80,7 +80,7 @@ class PostController extends Controller
     public function indexCompany($id)
     {
         //get jobs of the company
-        $jobs=create_post_table::orderBy('created_at', 'ASC')->where('id_company',$id)->paginate(10);
+        $jobs=create_post_table::orderBy('created_at', 'DESC')->where('id_company',$id)->paginate(10);
         return Post::collection($jobs);
     }
     public function show($id)
@@ -93,14 +93,14 @@ class PostController extends Controller
     }
     public function search($field,$query)
     {
-        $jobs=create_post_table::orderBy('created_at', 'ASC')->where($field,'LIKE',"%$query%")->paginate(10);
+        $jobs=create_post_table::orderBy('created_at', 'DESC')->where($field,'LIKE',"%$query%")->paginate(10);
 
         return Post::collection($jobs);
     }
     public function showCategory($category) 
     {
        //get Job by category
-       $jobs=create_post_table::orderBy('created_at', 'ASC')->where(['job_category'=>$category ,'isActive'=>'1'])->paginate(20);
+       $jobs=create_post_table::orderBy('created_at', 'DESC')->where(['job_category'=>$category ,'isActive'=>'1'])->paginate(20);
 
        //return jobs of that category
        return new Post($jobs);
