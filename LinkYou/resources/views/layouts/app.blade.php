@@ -90,10 +90,26 @@
                                 </li>
                             @endif
                         @else
+                        <li class="nav-item">
+                        <a style="color: #FFF" class="nav-link" href="/ShowJobs">Empleos Disponibles </a>
+                        </li>
+                        @if(Auth::user()->type==1)
+                        <li class="nav-item">    
+                        <a style="color: #FFF" class="nav-link" href="/Company/{{Auth::user()->id}}"> Empleos Publicados</a>
+                        </li>
+                        @endif
+
+                        @if(Auth::user()->type==2)
+                        <li class="nav-item">
+                        <a style="color: #FFF" class="nav-link" href="/Admin"> Administrar</a>
+                        </li>
+                        @endif
+                        
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" style="color: #FFF" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
+                                
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"

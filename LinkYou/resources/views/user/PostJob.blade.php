@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-@if(Auth::user()->type=="2")
+@if(Auth::user()->type==1)
 <div class="all">
     <h3> Publicar empleo</h3>
     <hr>
@@ -69,6 +69,10 @@
     </div>
 </div>
 @else
-<h3>No tienes acceso {{Auth::user()->name}}</h3>
+
+<div style="margin:auto; text-align:center; margin-top:20px ">
+<img src="https://image.flaticon.com/icons/png/512/61/61457.png">
+
+</div>
 @endif
 @endsection

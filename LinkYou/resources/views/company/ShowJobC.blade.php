@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+@if(Auth::user()->type==1)
 <!-- Div App relacionado con el archivo js -->
 <div id="app_ShowJobsC">
   
@@ -9,7 +9,7 @@
       <!-- Componente que es donde esta el Nav-->
     </div> 
      <!-- Buscador-->
-  <input v-model="hola" name="turu" id="turu" value="{{$id}}" hidden>
+  <input v-model="hola" name="turu" id="turu" value="{{$id}}" hidden><br>
     <h3>Trabajos Posteados</h3>
     <hr>
         <el-form>
@@ -42,6 +42,10 @@
     
     </div>
    
-   
+@else
 
+<div style="margin:auto; text-align:center; margin-top:20px ">
+<img src="https://image.flaticon.com/icons/png/512/61/61457.png">
+</div>
+@endif
 @endsection

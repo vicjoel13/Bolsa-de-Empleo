@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+@if(Auth::user()->type==2)
 <!-- Div App relacionado con el archivo js -->
 <div id="app_AdminJobs">
   <h2>Administrador</h2>
@@ -31,7 +31,7 @@
           </el-select>
         </el-col>
         <el-col :span="3" style="margin-left: 2%; position: absolute; right: 10px">
-          <a href="/Admin/create"> <el-button type="primary" icon="el-icon-edit">Crear Categoria</el-button> </a>       
+          <a href="/Admin/create"> <el-button type="primary" icon="el-icon-s-tools">Configuraciones</el-button> </a>       
        </el-col>
       </el-form-item>
     </el-form>
@@ -39,13 +39,13 @@
         
       
        <!-- Tabla -->
-       <div class="row">
+       <div class="row" style="width:100%">
 
     <div id="div6" class="col">
       <carta v-for="user in users" v-bind:info="user" @click.native="borrar(user.id)"></carta>
     </div>
     </div>
-    <div class="row">
+    <div class="row" style="width:100%">
       <div class="col" style="text-align: center; margin:10px;">
       <el-button class="btn btn-default" @click="fetchStories(links.prev)"
             :disabled="!links.prev">
@@ -58,5 +58,11 @@
       </div>
     </div>
    
+@else
+<div style="margin:auto; text-align:center; margin-top:20px ">
+<img src="https://image.flaticon.com/icons/png/512/61/61457.png">
 
+</div>
+
+@endif
 @endsection
