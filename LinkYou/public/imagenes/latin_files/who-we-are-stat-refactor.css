@@ -1,0 +1,27 @@
+.big-stat:nth-child(1){
+	width:237px
+}
+.big-stat:nth-child(2){
+	width:168px
+}
+/*
+.big-stat:nth-child(1) p:first-of-type{
+	text-align:left
+}
+.big-stat:nth-child(2) p:first-of-type{
+	text-align:left
+}
+*/
+.big-stat:nth-child(3){
+	width:222px
+}
+.col-md-12.m-b-3.stat-feature>div:nth-child(3){
+    float:right;
+    margin-right:0;
+}
+.col-md-12.m-b-3.stat-feature>div:nth-child(2){
+    margin-left:10%;
+}
+.big-stat.text-xs-center{ /*fix p width*/
+    width:auto !important;
+}

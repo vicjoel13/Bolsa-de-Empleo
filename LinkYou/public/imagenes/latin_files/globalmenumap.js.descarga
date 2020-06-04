@@ -1,0 +1,125 @@
+var InteractiveMap = function(element, defaultRegion) {
+  var el = element,
+    hits = element.find('.map-hit-areas div'),
+    region = element.find('.map-key .map-region'),
+    current = undefined;
+  var currRegion = (defaultRegion == undefined) ? 'world' : defaultRegion;
+  function init() {
+    var defaultRegion = $(".map-region[data-map='" + currRegion + "']");
+    var links = defaultRegion.next();
+    var expander = defaultRegion.find('.map-region-expander');
+    toggleRegion(currRegion, links, expander);
+  }
+  function toggleRegion(map, links, expander) {
+    if (links.is(':visible')) {
+      selectRegion('world');
+      expander.removeClass('open');
+      expander.removeClass('i-angle-up').addClass('i-angle-down');
+    } else {
+      if ($('.map-region-expander.i-angle-up').length) {
+        // close current region
+        $('.map-region-expander.i-angle-up').parent().next().slideToggle();
+        $('.map-region-expander.i-angle-up').removeClass('i-angle-up').addClass('i-angle-down');
+      }
+      selectRegion(map);
+      expander.removeClass('i-angle-down').addClass('i-angle-up');
+    }
+    links.slideToggle();
+  }
+  $(hits).click(function(e) {
+    var box = $(e.target).closest('.hitbox'),
+      map = box.attr('data-map'),
+      region = $(".map-region[data-map='" + map + "']"),
+      links = region.next(),
+      expander = region.find('.map-region-expander');
+    toggleRegion(map, links, expander);
+  });
+  $(region).click(function(e) {
+    var links = $(this).next(),
+      expander = $(this).find('.map-region-expander');
+    map = $(this).attr('data-map');
+    toggleRegion(map, links, expander);
+  });
+  $(window).resize(resize);
+  function selectRegion(map) {
+    $('.map-holder img').hide();
+    $('[data-map="' + map + '"]').show();
+    current = map;
+  }
+  function resize() {
+    // compute size of map holder
+    var holderHeight = $('.map-holder img:visible').height();
+    holderHeight = (holderHeight == 0) ? 536 : holderHeight; //make sure value is never 0
+    var holderMargin;
+    if (el.width() <= 768) {
+      holderMargin = 60;
+    } else {
+      holderMargin = (holderHeight >= 526) ? 150 : 150 + (526 - holderHeight);
+    }
+    $('.map-holder').css({ height: holderHeight, marginBottom: holderMargin });
+    // scale the hit areas
+    var ratio = holderHeight / 500;
+    for (var i = 0; i < hits.length; i++) {
+      var area = $(hits[i]).attr('data-location');
+      var css = {
+        left: positions[area].left * ratio + 'px',
+        top: positions[area].top * ratio + 'px',
+        width: positions[area].width * ratio + 'px',
+        height: positions[area].height * ratio + 'px'
+      };
+      $(hits[i]).css(css);
+    }
+    // position key and map based on screen size
+    if (el.width() <= 768) {
+      $('#map-key-col').insertAfter('#map-holder-col');
+    } else {
+      $('#map-key-col').insertBefore('#map-holder-col');
+    }
+  }
+  var positions = {
+    emea1: {
+      left: 328,
+      top: 170,
+      width: 167,
+      height: 230
+    },
+    emea2: {
+      left: 340,
+      top: 7,
+      width: 199,
+      height: 163
+    },
+    emea3: {
+      left: 539,
+      top: 25,
+      width: 238,
+      height: 110
+    },
+    northamerica: {
+      left: 0,
+      top: 0,
+      width: 328,
+      height: 240
+    },
+    latinamerica: {
+      left: 124,
+      top: 240,
+      width: 170,
+      height: 260
+    },
+    asiapacific1: {
+      left: 495,
+      top: 170,
+      width: 307,
+      height: 288
+    },
+    asiapacific2: {
+      left: 539,
+      top: 135,
+      width: 158,
+      height: 35
+    }
+  };
+  resize();
+  init();
+}

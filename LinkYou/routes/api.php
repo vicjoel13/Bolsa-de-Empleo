@@ -17,3 +17,35 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+//show all jobs
+Route::get('Jobs', "PostController@index");
+//show all jobs2
+Route::get('Jobs2', "PostController@index2");
+//show all jobs of the company
+Route::get('Jobs/{id}', "PostController@indexCompany");
+//list one Job
+Route::get('Job/{id}','PostController@show');
+//Create post 
+Route::post('create/Job','PostController@store');
+//Update/Edit
+Route::put('update/Job','PostController@store');
+//Delete Article
+Route::delete('Job/delete/{id}','PostController@destroy');
+//get the categorys
+Route::get('category','job_categoryController@index');
+//Delete category
+Route::delete('category/{id}','job_categoryController@destroy');
+//Create category 
+Route::post('create/category','job_categoryController@store');
+//Update/Edit category
+Route::put('create/category','job_categoryController@store');
+//list one category of job
+Route::get('category/{id}','job_categoryController@show');
+//list Job of a specific Category
+Route::get('Jobs/category/{category}','PostController@showCategory');
+//search by category on fieldset
+Route::get('search/Jobs/{field}/{query}','PostController@search');
+//get data from admin
+Route::get('admin','AdminConf@index');
+//update pagination
+Route::put('Admin','AdminConf@store');
