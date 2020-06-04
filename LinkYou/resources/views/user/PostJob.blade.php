@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-@if(Auth::user()->type=="2")
+@if(Auth::user()->type==1)
 <div class="all">
     <h3> Publicar empleo</h3>
     <hr>
